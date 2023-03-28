@@ -1,5 +1,11 @@
 ###### :cactus:  Mysql
 
+## 실습을 위한 준비
+1. XAMPP 설치 : 
+  - Apache, MariaDB.
+
+
+
 - MySQL, 한글깨짐 해결 :  YouTube 링크 
 - DB, Table 생성/삭제, Table 필드 관리 :
 - 기본 SQL, INSERT 문 :  YouTube 링크  
