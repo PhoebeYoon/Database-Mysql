@@ -1,20 +1,16 @@
 ###### :cactus:  Mysql
 
-
-About MySQL
-MySQL is a open-source, free and very popular relational database management system which is developed, distributed and supported by Oracle corporation.
-
-Key Features:
-Open-source relational database management systems.
-Reliable, very fast and easy to use database server.
-Works on client-server model.
-Highly Secure and Scalable
-High Performance
-High productivity as it uses stored procedures, triggers, views to write a highly productive code.
-Supports large databases efficiently.
-Supports many operating systems like Linux*,CentOS*, Solaris*,Ubuntu*,Windows*, MacOS*,FreeBSD* and others.
-Syntax help
-Commands
+## 주요 특징:
+오픈 소스 관계형 데이터베이스 관리 시스템.
+안정적이고, 매우 빠르고, 사용하기 쉬운 데이터베이스 서버.
+클라이언트-서버 모델에서 작동합니다.
+높은 보안 및 확장성
+고성능
+저장 프로시저, 트리거, 뷰를 사용하여 생산성이 높은 코드를 작성하므로 생산성이 높습니다.
+대용량 데이터베이스를 효율적으로 지원합니다.
+Linux*, CentOS*, Solaris*, Ubuntu*, Windows*, MacOS*, FreeBSD* 등과 같은 다양한 운영 체제를 지원합니다
+## Syntax help
+### Commands
 1. CREATE
 CREATE TABLE table_name (
                 column1 datatype,
@@ -42,7 +38,7 @@ Single-Line Comments:
 Multi-Line comments:
    /* Line1,
    Line2 */
-DML Commands
+### DML Commands
 1. INSERT
 INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
 Note: Column names are optional.
@@ -65,14 +61,16 @@ UPDATE EMPLOYEE SET dept = 'Sales' WHERE empId='0001';
 DELETE FROM table_name where condition;
 Example
 DELETE from EMPLOYEE where empId='0001'; 
-Indexes
+
+### Indexes
 1. CREATE INDEX
   CREATE INDEX index_name on table_name(column_name);
 To Create Unique index:
   CREATE UNIQUE INDEX index_name on table_name(column_name);
 2. DROP INDEX
 DROP INDEX index_name ON table_name;
-Views
+
+### Views
 1. Create a View
 Creating a View:
 CREATE VIEW View_name AS 
@@ -84,7 +82,8 @@ ALTER View View_name AS
 Query;
 4. Deleting a View
 DROP VIEW View_name;
-Triggers
+
+### Triggers
 1. Create a Trigger
 CREATE TRIGGER trigger_name trigger_time trigger_event
     ON tbl_name FOR EACH ROW [trigger_order] trigger_body
