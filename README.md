@@ -52,8 +52,23 @@ NoSQL(Not Only SQL): 데이터-테이블간의 관계를 정의하지 않는 데
 
 ## 실습을 위한 준비
 1. mySql 다운로드 https://dev.mysql.com/downloads/mysql/
-2. 윈도우 버전 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. 특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.
-3. macOS -
+2. 윈도우 버전 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. 특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.    
+3. 다음이미지를 참조하시면 됩니다 
+<img width="1406" alt="스크린샷 2023-03-30 오후 8 44 21" src="https://user-images.githubusercontent.com/48478079/228825962-ea5061f5-73fb-4afe-ab63-4cf9632d51d2.png">   
+( 이미지를 클릭하면 좀더 크게 볼 수 있습니다 )   
+
+[경로설정 ]
+```
+C:\Program Files\MySQL\MySQL Server 8.0\bin (설치경로 복사) ->
+   내 pc – 우클릭 – '정보탭' 아래 '고급시스템 정보' > 환경변수 > 
+   시스템변수 : path 찾아서 우측에서 새로만들기 클릭하고 붙여넣기한 후 확인
+```
+[설치확인]    
+```
+cmd > mysql mysql-uroot –p   (설명 –u 는 root  아이디로 로그인 , -p 는 패스워드 사용한다)
+```    
+
+4. macOS -
 ```
 > brew -v 
 Homebrew 4.0.0  ( 이렇게 버전이 나오는지 확인 )
