@@ -11,8 +11,6 @@ RDBMS의 데이터를 관리하기 위해 만들어진 언어입니다.  DB 권�
 
 3. DML (Data Manipulation Language):
 실제 테이블에 있는 데이터를 CRUD하기 위한   명령어입니다. (select, insert, update, delete...) 비유하자면 실제 출석부에 데이터를 넣는 것.   
-[ DB 외부접속 ]  
-      <img width="350" alt="스크린샷 2023-03-30 오후 6 48 27" src="https://user-images.githubusercontent.com/48478079/228798278-82a1cd37-188c-46c7-86aa-b18e84f40e2d.png">
 
 
 ## SQL 기본은 CRUD ( Create Read Update Delete )
@@ -24,7 +22,8 @@ INSERT INTO 테이블이름(컬럼이름1, 컬럼이름2, 컬럼이름3, ...) VA
 ### 수정 (update)
 UPDATE 테이블이름 SET 컬럼이름1=데이터값1, 컬럼이름2=데이터값2, ... WHERE 필드이름=데이터값
 ### 삭제 (delete)
-DELETE FROM 테이블이름 WHERE 필드이름=데이터값
+DELETE FROM 테이블이름 WHERE 필드이름=데이터값  
+
 ### 조회 (select)
 select 컬럼 from 테이블 where 조건
 - select
@@ -35,6 +34,11 @@ select 컬럼 from 테이블 where 조건
 
 
 
+## DB 외부접속 
+<img width="450" alt="스크린샷 2023-03-30 오후 6 48 27" src="https://user-images.githubusercontent.com/48478079/228798278-82a1cd37-188c-46c7-86aa-b18e84f40e2d.png"> 
+      
+      
+      
 ```
 var mysql = require('mysql');
 var connection = mysql.createConnection({
@@ -56,5 +60,4 @@ connection.end();
 -----------------------------------
 터미널에서 >npm install mysql 엔터
 터미널에서 >node mysql 엔터 (터미널에 테이블의 내용이 출력되는지 확인)
-
 ```
