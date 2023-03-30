@@ -109,8 +109,7 @@ Query;
 ```
 
 4. Deleting a View    
-``` DROP VIEW View_name; 
-````
+``` DROP VIEW View_name; ```
 
 
 ### Joins
