@@ -15,3 +15,20 @@ RDBMS의 데이터를 관리하기 위해 만들어진 언어입니다.  DB 권�
       <img width="350" alt="스크린샷 2023-03-30 오후 6 48 27" src="https://user-images.githubusercontent.com/48478079/228798278-82a1cd37-188c-46c7-86aa-b18e84f40e2d.png">
 
 
+## SQL 기본은 CRUD ( Create Read Update Delete )
+
+SQL도 관계형 데이터베이스에서 CRUD를 하기 위해 존재합니다.  
+
+### 생성 (insert)
+INSERT INTO 테이블이름(컬럼이름1, 컬럼이름2, 컬럼이름3, ...) VALUES (데이터값1, 데이터값2, 데이터값3, ...)
+### 수정 (update)
+UPDATE 테이블이름 SET 컬럼이름1=데이터값1, 컬럼이름2=데이터값2, ... WHERE 필드이름=데이터값
+### 삭제 (delete)
+DELETE FROM 테이블이름 WHERE 필드이름=데이터값
+### 조회 (select)
+select 컬럼 from 테이블 where 조건
+- select
+- join
+- sub query
+- group query
+- condition
