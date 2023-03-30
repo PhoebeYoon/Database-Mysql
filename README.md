@@ -52,44 +52,35 @@ NoSQL(Not Only SQL): 데이터-테이블간의 관계를 정의하지 않는 데
 
 ## 실습을 위한 준비
 1. mySql 다운로드 https://dev.mysql.com/downloads/mysql/
-2. 본인 컴퓨터에 맞는 운영체제와 버전를 선책하고 설치합니다.
-3. 
+2. 윈도우 버전 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. 특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.
+3. macOS -
+```
+> brew -v 
+Homebrew 4.0.0  ( 이렇게 버전이 나오는지 확인 )
+> brew install mysql  그럼 아래 이미지처럼 ==> 이런 기호나오면서 글자가 쭈욱 나오면 설치되는 것입니다. 
+  그리고 좀 있으면 맥주잔 아이콘도 나옵니다.
+mysql>  이렇게 나오면 설치가 완료된 것입니다.   
+mysql>exit ( 종료하고 빠져나옵니다 )
+```
+<img width="501" alt="스크린샷 2023-03-30 오후 7 58 05" src="https://user-images.githubusercontent.com/48478079/228815456-54cb8131-33ae-4a38-858e-eee0bbbb95f1.png">
 
+```  
+최상위루트에서 다음을 실행합니다
+cd usr/local/mysql/bin 
+./mysql -uroot -p ( 엔터후에 비번을 물어봅니다. 여기서의 비번은 mysql에서 사용할 비번으로 영문자포함 8자리를 입력합니다 기억해두십시오)
 
+Welcome to the MySQL monitor.  Commands end with ; or \g. <-- 요런 메시지가 나옵니다 
+mysql> 
+```
+자 그럼 설치는 완료했지만 커맨드라인으로 명령을 입력해서 사용하기 어렵잖아요. 
+4. 그래서 윈도우에서처럼 Workbench를 설치하도록 하겠습니다.   
+https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  다운로드후 설치하려고 하는데 '허용되지 않는다 뭐 그러면서 중단되면   
+:apple:  -> 시스템설정 -> 개인정보 보호 및 보안 -> 아래이미지처럼 허용해 줍니다    
 
-1. XAMPP 설치 : 
-  - Apache, MariaDB.
+<img width="353" alt="스크린샷 2023-03-30 오후 8 06 05" src="https://user-images.githubusercontent.com/48478079/228817315-1df42b70-b717-40a7-9171-332ce2441a84.png">   
+그후에 돌고래 아이콘을 '응용프로그램'으로 드래그하라고 나옵니다.   
+설명화면에서 보이는 그 '돌고래아이콘'을 드래그하여 '응용프로그램'으로가서 마우스를 놓으면 됩니다.
+<img width="526" alt="스크린샷 2023-03-30 오후 8 21 43" src="https://user-images.githubusercontent.com/48478079/228820753-d1833e32-b546-4c9b-87a9-5daa98c4d18a.png">
 
+5. 그리고 더블클릭하여 실행합니다.   
 
-
-- MySQL, 한글깨짐 해결 :  YouTube 링크 
-- DB, Table 생성/삭제, Table 필드 관리 :
-- 기본 SQL, INSERT 문 :  YouTube 링크  
--  기본 SQL, SELECT 문 
--  기본 SQL, UPDATE, DELETE 문   
-※ 간단한 회원가입 및 로그인 관련 실습 (without CSS, JavaScript) 
-- 회원가입 실습 :  YouTube 링크   (insert 문, 회원가입 후 로그인 화면으로 이동하기)
-- 로그인 실습 :  YouTube 링크   (session_start(), select 문, 로그인 후 index.php로 이동하기)
-- 회원정보수정 실습 :  YouTube 링크   (update 문, 회원정보 수정 후 index.php로 이동하기)
-- 회원탈퇴 실습 :  YouTube 링크   (delete 문, 회원탈퇴 후 index.php로 이동하기, AUTO_INCREMENT 재조정
-- AUTO_INCREMENT 재조정 방법 <img width="349" alt="스크린샷 2023-03-28 오후 4 07 57" src="https://user-images.githubusercontent.com/48478079/228156105-b2978f1b-6c93-459f-98f0-aea86552a481.png">
-
-※ 디자인을 포함한 홈페이지(회원가입, 로그인, 회원정보수정, 게시판 등) 실습 (with Bootstrap)
-
-※ 초기화면 디자인 :  YouTube 링크   (CSS(2021-2학기, 3학년 교과목)를 몰라도 Bootstrap을 이용하여 초기화면을 꾸미는 방법을 안내합니다.)
-
-- 1. 회원가입 페이지 디자인 및 구현 :  YouTube 링크  (☜ 첨부파일, homepage.zip 파일 참고, 이하 2번 3번 동일) 
-
-- 2. 로그인과 로그아웃 페이지 디자인 및 구현 :  YouTube 링크 
-
-- 3. 회원정보수정 페이지 디자인 및 구현 :  YouTube 링크 
-
-※ PART3, 실전 PHP 웹 프로그래밍(홈페이지 만들기), 수업시간에 실습한 파일들 (part3-실습파일들.zip)
-
-- 회원가입 페이지 만들기 (☜ 첨부파일, part3-12주차 실습파일.zip 파일 참고) 
-
-- 로그인과 회원정보수정 페이지 만들기 (☜ 첨부파일, part3-13주차 실습파일.zip 파일 참고) 
-
-- 쪽지 송수신 페이지 만들기 (☜ 첨부파일, part3-14주차 실습파일.zip 파일 참고) 
-
-- 게시판 페이지 만들기 (☜ 첨부파일, part3-15주차 실습파일.zip 파일 참고) 
