@@ -71,7 +71,16 @@ cd usr/local/mysql/bin
 
 Welcome to the MySQL monitor.  Commands end with ; or \g. <-- 요런 메시지가 나옵니다 
 mysql> 
+```   
+참고로   
+
 ```
+>mysql -uroot -p -hlocalhost
+>mysql -uroot -p -h127.0.0.1
+>mysql -uroot -p 엔터
+```
+
+
 자 그럼 설치는 완료했지만 커맨드라인으로 명령을 입력해서 사용하기 어렵잖아요. 
 4. 그래서 윈도우에서처럼 Workbench를 설치하도록 하겠습니다.   
 https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  다운로드후 설치하려고 하는데 '허용되지 않는다 뭐 그러면서 중단되면   
