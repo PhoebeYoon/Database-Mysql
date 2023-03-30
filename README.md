@@ -92,20 +92,25 @@ To Create Unique index:
 ``` DROP INDEX index_name ON table_name; ```    
 
 ### Views
-1. Create a View
-``` Creating a View:
+1. Create a View   
+Creating a View:
+``` 
 CREATE VIEW View_name AS 
-Query; ```
+Query; 
+```
 
-2. How to call view
+2. How to call view  
 ``` SELECT * FROM View_name; ```   
 
 3. Altering a View
-``` ALTER View View_name AS 
-Query;  ```
+``` 
+ALTER View View_name AS 
+Query;  
+```
 
 4. Deleting a View    
-``` DROP VIEW View_name; ````
+``` DROP VIEW View_name; 
+````
 
 
 ### Joins
