@@ -32,3 +32,29 @@ select 컬럼 from 테이블 where 조건
 - sub query
 - group query
 - condition
+
+
+
+```
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+      host :'localhost',
+      user:'root',
+      password :'111111',
+      database :'opentutorials'
+});
+
+connection.connect();
+
+connection.query(' SELECT * FROM topic', function(err, results, fields){
+      if(err){
+            console.log(err)
+      } 
+      console.log(results);
+})
+connection.end();
+-----------------------------------
+터미널에서 >npm install mysql 엔터
+터미널에서 >node mysql 엔터 (터미널에 테이블의 내용이 출력되는지 확인)
+
+```
