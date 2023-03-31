@@ -102,7 +102,9 @@ https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  
 
 <img width="353" alt="스크린샷 2023-03-30 오후 8 06 05" src="https://user-images.githubusercontent.com/48478079/228817315-1df42b70-b717-40a7-9171-332ce2441a84.png">   
 그후에 돌고래 아이콘을 '응용프로그램'으로 드래그하라고 나옵니다.   
-설명화면에서 보이는 그 '돌고래아이콘'을 드래그하여 '응용프로그램'으로가서 마우스를 놓으면 됩니다.
+설명화면에서 보이는 그 '돌고래아이콘'을 드래그하여 '응용프로그램'으로가서 마우스를 놓으면 됩니다.    
+<img width="357" alt="스크린샷 2023-03-31 오후 8 11 06" src="https://user-images.githubusercontent.com/48478079/229105436-54f78807-38bb-457b-8f31-75a411b56182.png">
+
 <img width="526" alt="스크린샷 2023-03-30 오후 8 21 43" src="https://user-images.githubusercontent.com/48478079/228820753-d1833e32-b546-4c9b-87a9-5daa98c4d18a.png">
 
 5. 그리고 더블클릭하여 실행합니다.   
