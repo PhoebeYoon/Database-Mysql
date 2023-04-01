@@ -45,7 +45,7 @@ mysql> create table student_info(
 
 ```
 mysql> show tables; 
-mysql> desc student_info
+mysql> desc student_info # 테이블의 구조를 알고 싶을때 desc 명령을 사용합니다   
 ```   
 실행결과는 아래와 같습니다.  
 <img width="465" alt="스크린샷 2023-04-01 오후 6 51 45" src="https://user-images.githubusercontent.com/48478079/229279114-372bfd1c-57b8-4574-a0a1-90f511e09139.png">
