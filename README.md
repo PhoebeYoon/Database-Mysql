@@ -18,3 +18,4 @@ mysql설치시에 입력했던 비번을 입력하시면 됩니다.
 <img width="500" alt="스크린샷 2023-03-31 오후 7 58 26" src="https://user-images.githubusercontent.com/48478079/229102625-b56bbaff-dd21-4269-b84f-124d1446bcdf.png">
 
 
+<img width="180" alt="스크린샷 2023-04-01 오후 9 47 09" src="https://user-images.githubusercontent.com/48478079/229289767-78983eec-3067-4657-bb2c-2ebfcb215673.png">
