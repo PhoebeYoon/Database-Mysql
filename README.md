@@ -57,7 +57,7 @@ mysql> desc books;
 
 ``` 
 
-
+##### 마지막 pet 테이블생성 쿼리는 아래와 같다. primary key는 생성하지 않는다
 ```
 # pet table
 mysql> create table pet(name varchar(20), owner varchar(20),
