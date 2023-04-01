@@ -19,23 +19,44 @@ mysql를 사용하려면 유저 (관리자)가 있어야 하는데 기본적인 
 
 
 
-## 한글설정  
-먼저 mysql의 설정을 살펴보겠습니다.  
-- Mac에서는 my.cnf
+## 한글설정 및 환경설정 내용보기  
+먼저 mysql의 설정파일은 다음과 같습니다 
+- Mac에서는 my.cnf <-- mysql에서 사용하는 환경설정파일입니다 
 - windows는 my.ini 파일입니다  
 
-우리는 터미널에서 설정내용을 통해 알아보겠습니다.  여기서 우리가 봐야할 것은 utf
+이제 mysql의 설정내용을 터미널을 통해 알아보겠습니다.  여기서 우리가 봐야할 것은 
 ```
 mysql>show variables like 'datadir%';
 mysql>show variables like 'character_set\_%';
 mysql>show variables like 'c%';
+mysql> show variables where Variable_Name like "%dir%";
 ```
 <img width="300" alt="스크린샷 2023-04-01 오후 3 30 48" src="https://user-images.githubusercontent.com/48478079/229269817-70f62f3c-0317-40c8-95d0-b461b8ece429.png"> <img width="300" alt="스크린샷 2023-04-01 오후 3 31 15" src="https://user-images.githubusercontent.com/48478079/229269802-11a49f54-8775-4a0f-8962-22e4e3ecc4f9.png">
 
-<img width="600" alt="스크린샷 2023-04-01 오후 3 38 59" src="https://user-images.githubusercontent.com/48478079/229270078-f43c00c1-ae05-4d6d-8c79-6fbe0695879c.png">
+<img width="600" alt="스크린샷 2023-04-01 오후 3 38 59" src="https://user-images.githubusercontent.com/48478079/229270078-f43c00c1-ae05-4d6d-8c79-6fbe0695879c.png">   
+
+<img width="600" alt="스크린샷 2023-04-01 오후 3 51 42" src="https://user-images.githubusercontent.com/48478079/229270631-40b5b2ab-cfa3-461c-a662-897b0280b7eb.png">
+
+
+## mysql 설정보기 
+```  mysql> status;  ```  
+
+<img width="400" alt="스크린샷 2023-04-01 오후 3 40 50" src="https://user-images.githubusercontent.com/48478079/229270185-18108f58-1641-4356-bb00-b3c92c4f5296.png">
+
 
 ## 데이터베이스 생성 및 삭제 
-
+``` create database 데이터베이스이름  ```    
+예)  
+```
+mysql>create database study_db;  
+mysql>show databases;
+mysql>use study_db;   
+Database changed
+mysql>drop database study_db;
+Query OK <-- 뭐 이렇게 나오면 됩니 
+mysql>show databases;
+```  
+여기서 세미콜론 과 's'를 주의하세요  
 
 
 
