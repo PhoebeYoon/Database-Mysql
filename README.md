@@ -19,6 +19,9 @@ mysql를 사용하려면 유저 (관리자)가 있어야 하는데 기본적인 
 
 
 
+## 데이터베이스 생성 및 삭제 
+
+
 
 ## SQL이란? (Structured Query Language)
 RDBMS의 데이터를 관리하기 위해 만들어진 언어입니다.  DB 권한설정, 테이블 CRUD, 데이터 CRUD는 SQL을 통해 이루어진다고 할 수 있습니다. 
