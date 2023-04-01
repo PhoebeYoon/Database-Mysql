@@ -34,8 +34,20 @@ mysql> alter table books drop publication;
 mysql>desc books;
 ```
 
-## 필드수정
-#### alter table 테이블명 change 이전 필드명, 새로운 필드명 타입;
+## 필드명수정
+#### alter table 테이블명 change 이전필드명 새로운 필드명 이전필드의자료형;
+```
+mysql> desc books;
+mysql> alter table books change title NameofTitle varchar(50);
+mysql> desc books;
+```
 
-## 필드타입수정
-####  alter table 테이블명 modify 필드명, 새로운 타입; 
+
+## 필드타입 수정
+####  alter table 테이블명 change 이전필드명 새로운 타입 새로운자료형; 
+```
+mysql> alter table books change  writer author char(30);
+mysql> desc books;
+
+``` 
+
