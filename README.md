@@ -10,8 +10,10 @@
 <img width="566" alt="스크린샷 2023-04-01 오후 7 48 13" src="https://user-images.githubusercontent.com/48478079/229284369-d7b54514-bae1-47be-804e-c34aab33e6bb.png">    
 [employee 테이블]    
 
-<img width="566" alt="스크린샷 2023-04-01 오후 8 23 12" src="https://user-images.githubusercontent.com/48478079/229285888-9321fa7c-798e-4aad-bf2c-a30da04a6c00.png">   
+<img width="566" alt="스크린샷 2023-04-01 오후 8 23 12" src="https://user-images.githubusercontent.com/48478079/229285888-9321fa7c-798e-4aad-bf2c-a30da04a6c00.png">    
+[pet 테이블]   
 
+<img width="566" alt="스크린샷 2023-04-01 오후 9 23 54" src="https://user-images.githubusercontent.com/48478079/229288430-6d40fc1d-41d9-464a-b193-90f2115574c1.png">
 
 ## table의 이름 변경
 형식: 
@@ -55,3 +57,9 @@ mysql> desc books;
 
 ``` 
 
+
+```
+# pet table
+mysql> create table pet(name varchar(20), owner varchar(20),
+    -> species varchar(20), sex char(1), birth date );
+```
