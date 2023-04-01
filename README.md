@@ -1,16 +1,15 @@
 ###### :cactus:  Mysql
 
-## 주요 특징:
-오픈 소스 관계형 데이터베이스 관리 시스템.
-안정적이고, 매우 빠르고, 사용하기 쉬운 데이터베이스 서버.
-클라이언트-서버 모델에서 작동합니다.
-높은 보안 및 확장성
-고성능
-저장 프로시저, 트리거, 뷰를 사용하여 생산성이 높은 코드를 작성하므로 생산성이 높습니다.
-대용량 데이터베이스를 효율적으로 지원합니다.
-Linux*, CentOS*, Solaris*, Ubuntu*, Windows*, MacOS*, FreeBSD* 등과 같은 다양한 운영 체제를 지원합니다
-## Syntax help
-### Commands
+## 터미널에서 데이터베이스 생성, 삭제   
+형식은 다음과 같습니다.  
+
+
+
+
+
+
+
+
 1. CREATE
 ```
 CREATE TABLE table_name (
@@ -27,6 +26,11 @@ CREATE TABLE EMPLOYEE (
   dept TEXT NOT NULL
 ); 
 ```    
+
+
+
+
+
 
 2. ALTER
 ``` ALTER TABLE Table_name ADD column_name datatype;```   
