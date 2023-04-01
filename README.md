@@ -94,3 +94,18 @@ mysql> desc student_info # 테이블의 구조를 알고 싶을때 desc 명령�
 사용자는 데이터를 마음대로 입력합니다. 예를들어 이름을 입력할때도 '홍길동', '홍 길동', '홍 길 동','Hong Gil Dong','hong gil dong','HONG KIL DDong' 등등 같은이름인데도 이렇게 다양하게 사용자는 입력할 수 있습니다. 이것을 일일이 처리한다는 것은 쉽지않고 해야할일이 너무 많습니다.   
 그렇기 때문에 어떻게 입력해야 하는지를 딱 정해놓으면 편리할뿐 아니라 관리가 편해진다는 것은 분명한 사실이며 더욱 대용량의 데이터를 처리할때는 시간과 노력을 상당히 절약할 수 있습니다.   
 
+## 다른 테이블을 생성해 보겠습니다.
+```
+mysql> create table sample(
+    -> student_id int(10) not null auto_increment,
+    -> student_name varchar(30) not null,
+    -> kor int(5) null,
+    -> eng int(5) null,
+    -> mat int(5) null,
+    -> primary key(student_id)
+    -> );
+Query OK, 0 rows affected, 4 warnings (0.01 sec)
+mysql>desc tables;
+```
+
+위의 2개의 예제에서 primary key 라는 것을 사용했습니다.  
