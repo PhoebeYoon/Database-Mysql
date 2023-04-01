@@ -44,8 +44,8 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
       host :'localhost',
       user:'root',
-      password :'111111',
-      database :'opentutorials'
+      password :'비번',
+      database :'데이터베이스이름'
 });
 
 connection.connect();
