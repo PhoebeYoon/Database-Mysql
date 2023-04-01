@@ -21,7 +21,7 @@ mysql> alter table author rename books;
 
 
 ## table 필드추가
-[02주차_데이터베이스_ MySQL실습_따라해보기.pdf](https://github.com/PhoebeYoon/Database-Mysql/files/11129265/02._._.MySQL._.pdf)
+
 #### alter table 테이블명 add 새로운 필드명 타입 [first 또는 after 필드명];
 ```
 mysql>alter table books add  publication date after writer; 
