@@ -57,7 +57,15 @@ mysql> desc books;
 
 ``` 
 
-##### 마지막 pet 테이블생성 쿼리는 아래와 같다. primary key는 생성하지 않는다
+🧑‍🚀  위의 employee 생성은 아래입니다 
+```
+mysql> create table employee( id int(11), name varchar(16) not null,
+    -> department_id varchar(16) not null,
+    -> primary key(id)
+    -> );
+```
+
+🧑‍🚀 pet 테이블생성 쿼리는 아래와 같고, primary key는 생성하지 않습니다
 ```
 # pet table
 mysql> create table pet(name varchar(20), owner varchar(20),
