@@ -19,7 +19,24 @@ mysql를 사용하려면 유저 (관리자)가 있어야 하는데 기본적인 
 
 
 
+## 한글설정  
+먼저 mysql의 설정을 살펴보겠습니다.  
+- Mac에서는 my.cnf
+- windows는 my.ini 파일입니다  
+
+우리는 터미널에서 설정내용을 통해 알아보겠습니다.  여기서 우리가 봐야할 것은 utf
+```
+mysql>show variables like 'datadir%';
+mysql>show variables like 'character_set\_%';
+mysql>show variables like 'c%';
+```
+<img width="300" alt="스크린샷 2023-04-01 오후 3 30 48" src="https://user-images.githubusercontent.com/48478079/229269817-70f62f3c-0317-40c8-95d0-b461b8ece429.png"> <img width="300" alt="스크린샷 2023-04-01 오후 3 31 15" src="https://user-images.githubusercontent.com/48478079/229269802-11a49f54-8775-4a0f-8962-22e4e3ecc4f9.png">
+
+<img width="600" alt="스크린샷 2023-04-01 오후 3 38 59" src="https://user-images.githubusercontent.com/48478079/229270078-f43c00c1-ae05-4d6d-8c79-6fbe0695879c.png">
+
 ## 데이터베이스 생성 및 삭제 
+
+
 
 
 
