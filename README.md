@@ -110,6 +110,11 @@ mysql>desc tables;
 
 위의 2개의 예제에서 primary key 라는 것을 사용했습니다.   
 create문에서 테이블을 생성할때 primary key 제약조건을 설정할 수 있습니다. 
-PRIMARY KEY로 설정된 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 특징을 모두 가집니다.
+PRIMARY KEY로 설정된 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 특징을 모두 가집니다.   
 , 이게 뭐냐면 해당 필드는 NULL 값을 가질 수 없으며, 또한 중복된 값을 가져서도 안 됩니다. 그리고 
 이러한 PRIMARY KEY 제약 조건을 기본 키라고 합니다
+
+## primary key란
+primary key는 한개 또는 여러개의 칼럼으로 테이블내의 각 행들을 구별하는 목적으로 사용됩니다. 그래서 primary key로 설정된 필드는 null 값을 가질 수 없고 unique(유일)해야 합니다. 
+
+
