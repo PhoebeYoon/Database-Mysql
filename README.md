@@ -51,98 +51,42 @@ mysql> desc student_info # 테이블의 구조를 알고 싶을때 desc 명령�
 <img width="465" alt="스크린샷 2023-04-01 오후 6 51 45" src="https://user-images.githubusercontent.com/48478079/229279114-372bfd1c-57b8-4574-a0a1-90f511e09139.png">
 
 
+## mysql 데이터타입  
+
+| 문자형 데이터타입 |  설명 | 
+|---|---|
+|CHAR(n)	|고정 길이 데이터 타입(최대 255byte)- 지정된 길이보다 짦은 데이터 입력될 시 나머지 공간 공백으로 채워진다. |
+|VARCHAR(n)|	가변 길이 데이터 타입(최대 65535byte)- 지정된 길이보다 짦은 데이터 입력될 시 나머지 공간은 채우지 않는다.|
+|TINYTEXT(n)|문자열 데이터 타입(최대 255byte) |
+|TEXT(n)|	문자열 데이터 타입(최대 65535byte) |
+|MEDIUMTEXT(n)	| 문자열 데이터 타입(최대 16777215byte) |
+|LONGTEXT(n)|	문자열 데이터 타입(최대 4294967295byte) |
+|JSON	JSON|문자열 데이터 타입 - JSON 형태의 포맷을 꼭 준수해야 한다.|
+
+|숫자형 데이터 타입 |  설명 |
+|---|---|
+|TINYINT(n)	| 정수형 데이터 타입(1byte) -128 ~ +127 또는 0 ~ 255수 표현할 수 있다. |
+|MALLINT(n)	| 정수형 데이터 타입(2byte) -32768 ~ 32767 또는 0 ~ 65536수 표현할 수 있다.|
+|INT(n)	| 정수형 데이터 타입(4byte) -2147483648 ~ +2147483647 또는 0 ~ 4294967295수 표현할 수 있다. |
+|FLOAT(길이, 소수)	| 부동 소수형 데이터 타입(4byte) -고정 소수점을 사용 형태이다. |
 
 
-2. ALTER
-``` ALTER TABLE Table_name ADD column_name datatype;```   
-
-Example
-```INSERT INTO EMPLOYEE VALUES (0001, 'Dave', 'Sales');```     
-
-3. TRUNCATE
-```TRUNCATE table table_name;```    
-
-4. DROP
-```DROP TABLE table_name;```    
-
-5. RENAME
-```RENAME TABLE table_name1 to new_table_name1; ```      
-
-6. COMMENT
-Single-Line Comments:  ``` --Line1; ```    
-Multi-Line comments:
- ```
- /* Line1,
-   Line2 */ 
-   ```      
-   
-### DML Commands
-1. INSERT
-``` INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);```
-Note: Column names are optional.
-
-Example
-``` INSERT INTO EMPLOYEE VALUES (0001, 'Ava', 'Sales'); ```   
-2. SELECT
-``` 
-SELECT column1, column2, ...
-FROM table_name
-[where condition]; 
-```  
-
-Example
-``` SELECT * FROM EMPLOYEE where dept ='sales'; ```    
-
-3. UPDATE  
-``` 
-UPDATE table_name
-SET column1 = value1, column2 = value2, ...
-WHERE condition; 
-```   
-
-Example    
-``` UPDATE EMPLOYEE SET dept = 'Sales' WHERE empId='0001'; ```   
-
-4. DELETE   
-``` DELETE FROM table_name where condition; ```    
-Example   
-``` DELETE from EMPLOYEE where empId='0001'; ```    
-
-### Indexes
-1. CREATE INDEX
-  ``` CREATE INDEX index_name on table_name(column_name);  ```
-To Create Unique index:    
-  ``` CREATE UNIQUE INDEX index_name on table_name(column_name); ```  
-2. DROP INDEX
-``` DROP INDEX index_name ON table_name; ```    
-
-### Views
-1. Create a View   
-Creating a View:
-``` 
-CREATE VIEW View_name AS 
-Query; 
-```
-
-2. How to call view  
-``` SELECT * FROM View_name; ```   
-
-3. Altering a View
-``` 
-ALTER View View_name AS 
-Query;  
-```
-
-4. Deleting a View    
-``` DROP VIEW View_name; ```
+|날짜형 데이터 타입 |  설명 |
+|---|---|
+| DATE	| 날짜(년도, 월, 일) 형태의 기간 표현 데이터 타입(3byte) |
+|TIME	| 시간(시, 분, 초) 형태의 기간 표현 데이터 타입(3byte) |
+|YEAR	| 년도 표현 데이터 타입(1byte) |
+| DATETIME| 	날짜와 시간 형태의 기간 표현 데이터 타입(8byte)|
+| 이진 데이터유형 | 설명 |
+|BINARY(n) & BYTE(n)	| CHAR의 형태의 이진 데이터 타입 (최대 255byte) |
+|VARBINARY(n)	| VARCHAR의 형태의 이진 데이터 타입 (최대 65535byte)|
+|BLOB(n)	| 이진 데이터 타입 (최대 65535byte) |
 
 
-### Joins
-1. INNER JOIN
-``` SELECT * FROM TABLE1 INNER JOIN TABLE2 where condition;```
-2. LEFT JOIN
-```SELECT * FROM TABLE1 LEFT JOIN TABLE2 ON condition;```
-3. RIGHT JOIN
-```SELECT * FROM TABLE1 RIGHT JOIN TABLE2 ON condition;```
-4. CROSS JOIN
-```SELECT select_list from TABLE1 CROSS JOIN TABLE ```
+이외에도 데이터타입이 있으니 지금은 이 정도까지만 알고 넘어가겠습니다.   
+
+## Mysql cheat Sheet 
+브라우저에 'mysql cheat sheet' 로 검색하시면 매우 많은 검색결과가 있습니다. 그중에서 원하시는 것을 선택하여 사용하셔도 좋습니다. 또는 온라인으로도 제공되는 것도 있습니다    
+예) https://devhints.io/mysql 
+
+
