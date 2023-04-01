@@ -108,4 +108,8 @@ Query OK, 0 rows affected, 4 warnings (0.01 sec)
 mysql>desc tables;
 ```
 
-위의 2개의 예제에서 primary key 라는 것을 사용했습니다.  
+위의 2개의 예제에서 primary key 라는 것을 사용했습니다.   
+create문에서 테이블을 생성할때 primary key 제약조건을 설정할 수 있습니다. 
+PRIMARY KEY로 설정된 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 특징을 모두 가집니다.
+, 이게 뭐냐면 해당 필드는 NULL 값을 가질 수 없으며, 또한 중복된 값을 가져서도 안 됩니다. 그리고 
+이러한 PRIMARY KEY 제약 조건을 기본 키라고 합니다
