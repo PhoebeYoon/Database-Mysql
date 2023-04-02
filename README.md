@@ -19,3 +19,12 @@ mysql설치시에 입력했던 비번을 입력하시면 됩니다.
 
 
 <img width="180" alt="스크린샷 2023-04-01 오후 9 47 09" src="https://user-images.githubusercontent.com/48478079/229289767-78983eec-3067-4657-bb2c-2ebfcb215673.png">
+
+## workbench 화면설명
+<img width="400" alt="스크린샷 2023-04-02 오후 9 46 05" src="https://user-images.githubusercontent.com/48478079/229353790-347feed7-32a5-4ae0-9d49-ac3d146e7f2f.png">     
+터미널창에서 타이핑하여 주던 명령어들을 workbench에서는 '쿼리'탭을 열고 그곳에 입력한다. 실행할때는 번개모양 :zap: 아이콘을 클릭하면 된다. 여러줄을 입력했다면 그 명령들을 블록으로 지정하고 번개모양 :zap:을 클릭하면 된다.   
+
+
+
+
+ 
