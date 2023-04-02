@@ -28,7 +28,7 @@ mysql> alter table author rename books;
 
 ## table 필드추가
 
-#### alter table 테이블명 add 새로운 필드명 타입 [first 또는 after 필드명];
+#### alter table 테이블명 add 새로운필드명   새로운필드타입   [first 또는 after 필드명];
 ```
 mysql>alter table books add  publication date after writer; 
 mysql>desc books;
