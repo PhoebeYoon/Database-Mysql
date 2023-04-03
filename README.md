@@ -22,14 +22,17 @@
 | lcase, lower | 주어진 문자를 모두 소문자로 바꿉니다 |
 | concat() | 괄호안의 내용을 이어붙입니다  |
 |concat_ws(s, ... ) | 괄호안의 내용을 s로 이어붙입니다 | 
-| SUBSTR, SUBSTRING	 |주어진 값에 따라 문자열 자름 |
-| LEFT	 |왼쪽부터 n개의 글자 추출합니다 |
-| RIGHT |	오른쪽부터 n개의 글자를 추출합니다 |
-| LENGTH	|문자열의 바이트 길이 |
-|CHAR_LENGTH, CHARACTER_LEGNTH| 문자열의 문자 길이 |
-|TRIM	|양쪽 공백 제거|
-| LTRIM	|왼쪽 공백 제거 |
-|RTRIM | 오른쪽 공백 제거 |
-| LPAD(S, N, P)|	S가 N글자가 될 때까지 P를 이어붙임 |
-| RPAD(S, N, P)	|S가 N글자가 될 때까지 P를 이어붙임 |
+| substr, substring |주어진 값에 따라 문자열 자름 |
+| left |왼쪽부터 n개의 글자 추출합니다 |
+| right |	오른쪽부터 n개의 글자를 추출합니다 |
+| length|문자열의 바이트 길이 |
+| char_lenght, character_length| 문자열의 문자 길이 |
+| trim	|양쪽 공백 제거|
+| ltrim	|왼쪽 공백 제거 |
+| rtrim| 오른쪽 공백 제거 |
+| lpad(s, n, p)|	S가 N글자가 될 때까지 P를 이어붙임 |
+| rpad(s, n, p)	|S가 N글자가 될 때까지 P를 이어붙임 |
 | REPLACE(S, A, B)| 	S중 A를 B로 변경 |
+| instr(S, s)	| S중 s의 첫 위치 반환, 없을 시 0 |
+| cast(a as t)	|A를 T 자료형으로 변환 |
+| convert(a, t)	| A를 T 자료형으로 변환 |
