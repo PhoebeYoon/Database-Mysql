@@ -12,7 +12,7 @@
 4. 'next'를 클릭하고 'finish'가 나올때까지 진행합니다.
 5. 'Finish'를 클릭했지만 변화가 없어보입니다.   왼쪽 패널 'SCHEMAS' 글자 오른쪽에 리로드 아이콘을 클릭하면 테이블이 입력되어 있습니다  
 <img width="150" alt="스크린샷 2023-04-03 오후 7 19 08" src="https://user-images.githubusercontent.com/48478079/229485349-af378c97-fa11-4da7-81a6-ca5813571409.png">
-
+6. 이제 첨부된 모든 csv 파일을 import 합니다.  
 
 
 
