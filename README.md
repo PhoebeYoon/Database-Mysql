@@ -1,5 +1,24 @@
 ###### :cactus:  Mysql
 
+## 이 수업을 통해 여러분은 다음과 같은것을 알게될 것입니다. 
+1. sql의 기초문법이해   
+    - 데이터베이스의 개념
+    - Sql vs no Sql 뭔지
+    - 관계형데이터베이스 mysql의 설치 및 실행
+    - mysql를 터미널를 통해 배워보기
+    - sql 문의 각종 연산자
+    - sql로 데이터베이스 만들기
+    - sql로 테이블생성,삭제
+    - sql로 필드생성, 삭제, 변경    
+2. sql의 데이터다루기   
+    - workbench를 통한 디비관리
+    - 데이터의 검색에 관련된 자주 사용하는 명령어
+    - 데이터의 수정에 관련된 자주 사용하는 명령어
+    - JSON데이터 타입 사용하기   
+3. mysql를 활용한 응용
+    - node.js를 활용한 웹사이트 만들기     
+(위 과정은 전체코스입니다 1,2는 함께 진행되고 3는 별도로 진행됩니다.)
+
 
 ## 데이타베이스 개념
 ### 데이터 ( Data ) 란 
@@ -49,64 +68,4 @@ NoSQL(Not Only SQL): 데이터-테이블간의 관계를 정의하지 않는 데
 |Oracle|	Oracle	|Unix, Linux, Windows|	상용 시장 점유율 1위|
 | Access |	Microsoft|	Windows	|PC용|
 | SQLite	|SQLite	|Android, iOS	|모바일 전용, 오픈 소스(무료)|
-
-## 실습을 위한 준비
-1. mySql 다운로드 https://dev.mysql.com/downloads/mysql/
-2. 윈도우 버전 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. 특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.    
-3. 다음이미지를 참조하시면 됩니다 
-<img width="1406" alt="스크린샷 2023-03-30 오후 8 44 21" src="https://user-images.githubusercontent.com/48478079/228825962-ea5061f5-73fb-4afe-ab63-4cf9632d51d2.png">   
-mysql은 3306 포트번호를 사용합니다. 포트가 뭔지는 이미 아시리라 생각합니다. ( 이미지를 클릭하면 좀더 크게 볼 수 있습니다 )   
-
-[경로설정 ]
-```
-C:\Program Files\MySQL\MySQL Server 8.0\bin (설치경로 복사) ->
-   내 pc – 우클릭 – '정보탭' 아래 '고급시스템 정보' > 환경변수 > 
-   시스템변수 : path 찾아서 우측에서 새로만들기 클릭하고 붙여넣기한 후 확인
-```
-[설치확인]    
-```
-cmd > mysql mysql-uroot –p   (설명 –u 는 root  아이디로 로그인 , -p 는 패스워드 사용한다)
-```    
-
-4. macOS -
-```
-> brew -v 
-Homebrew 4.0.0  ( 이렇게 버전이 나오는지 확인 )
-> brew install mysql  그럼 아래 이미지처럼 ==> 이런 기호나오면서 글자가 쭈욱 나오면 설치되는 것입니다. 
-  그리고 좀 있으면 맥주잔 아이콘도 나옵니다.
-mysql>  이렇게 나오면 설치가 완료된 것입니다.   
-mysql>exit ( 종료하고 빠져나옵니다 )
-```
-<img width="501" alt="스크린샷 2023-03-30 오후 7 58 05" src="https://user-images.githubusercontent.com/48478079/228815456-54cb8131-33ae-4a38-858e-eee0bbbb95f1.png">
-
-```  
-최상위루트에서 다음을 실행합니다
-cd usr/local/mysql/bin 
-./mysql -uroot -p ( 엔터후에 비번을 물어봅니다. 여기서의 비번은 mysql에서 사용할 비번으로 영문자포함 8자리를 입력합니다 기억해두십시오)
-
-Welcome to the MySQL monitor.  Commands end with ; or \g. <-- 요런 메시지가 나옵니다 
-mysql> 
-```   
-참고로  아래와 같이 커맨드창에서 mysql를 접속할 수 있습니다.  
-```
->mysql -uroot -p -hlocalhost
->mysql -uroot -p -h127.0.0.1
->mysql -uroot -p 엔터
-```
-
-
-자 그럼 설치는 완료했지만 커맨드라인으로 명령을 입력해서 사용하기 어렵잖아요.    
-4. 그래서 윈도우에서처럼 Workbench를 설치하도록 하겠습니다.  
-(참고로 저는 최신버전 8.0.30 입니다. 8.0.31버전도 있지만 이 버전은 workbench 실행이 원할하지 않습니다 )
-https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  다운로드후 설치하려고 하는데 '허용되지 않는다 뭐 그러면서 중단되면   
-:apple:  -> 시스템설정 -> 개인정보 보호 및 보안 -> 아래이미지처럼 허용해 줍니다    
-
-<img width="353" alt="스크린샷 2023-03-30 오후 8 06 05" src="https://user-images.githubusercontent.com/48478079/228817315-1df42b70-b717-40a7-9171-332ce2441a84.png">   
-그후에 돌고래 아이콘을 '응용프로그램'으로 드래그하라고 나옵니다.   
-설명화면에서 보이는 그 '돌고래아이콘'을 드래그하여 '응용프로그램'으로가서 마우스를 놓으면 됩니다.    
-<img width="357" alt="스크린샷 2023-03-31 오후 8 11 06" src="https://user-images.githubusercontent.com/48478079/229105436-54f78807-38bb-457b-8f31-75a411b56182.png">
-
-<img width="526" alt="스크린샷 2023-03-30 오후 8 21 43" src="https://user-images.githubusercontent.com/48478079/228820753-d1833e32-b546-4c9b-87a9-5daa98c4d18a.png">
-
-5. 그리고 더블클릭하여 실행합니다.   
 
