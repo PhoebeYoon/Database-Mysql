@@ -88,7 +88,14 @@ mysql> select 'A' < '1'; <-- 결과는 1
 그렇지만 숫자와문자가 섞여서 계산될때 문자는 0으로 처리되기 때문에 'A'> 1 의 결과는 0이다. 
 
 
-##  in,  not in , between
+##  in,  not in , between 연산자
+
+|연산자 | 설명 |
+|---|---|
+| in() | 괄호안에 값들 중이 있다 |
+| not in() | 괄호안에 값들 중이 없다|
+|between and | 괄호안에 값들 중이 있다 |
+
 ```
 mysql> select 10 in (10,13,15);
 mysql> select 10 not in (10,13,15);
@@ -98,5 +105,17 @@ mysql> select 'apple' not in ('apple','peach','banana');
 mysql> select 'b' between 'a' and 'c';
 mysql> select 'd' between 'a' and 'c';
 mysql> select 'life' between 'B' and 'D';
+```    
 
-```   
+## LIKE % , _   
+LIKE 연산자와 함께 사용하는 와일드카드는 % , _ (언더바)입니다.   
+%는 1개의 문자이상을, _ 는 1개의 문자를 대치합니다 주로 LIKE 연산자와 함께 사용합니다. 
+```
+mysql> select 'hello' like 'h%'; <-- 결과는 1
+mysql> select 'good' like 'h%';   <-- 결과는 0, 로 h시작하지 않고 g시작
+mysql> select 'good' like '_o__'; <-- 결과는 1
+mysql> select 'good' like '_o_'; <-- 결과는 0 자릿수가 모잘랍니다
+```
+LIKE 연산자는 나중에 쿼리문과 함께 더 실습해 보겠습니다. 
+
+
