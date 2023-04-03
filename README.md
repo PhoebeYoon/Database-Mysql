@@ -107,7 +107,7 @@ mysql> select 'd' between 'a' and 'c';
 mysql> select 'life' between 'B' and 'D';
 ```    
 
-## LIKE % , _   
+## LIKE (% , _ ) 
 LIKE 연산자와 함께 사용하는 와일드카드는 % , _ (언더바)입니다.   
 %는 1개의 문자이상을, _ 는 1개의 문자를 대치합니다 주로 LIKE 연산자와 함께 사용합니다. 
 ```
