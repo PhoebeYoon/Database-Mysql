@@ -30,3 +30,21 @@ mysql> select 10 / 'A';
 mysql> select '10' *3;  <-- 문자인 숫자와 숫자가 섞여있지만 결과는 30입니다.
 mysql> select '10' +"031" + 2 ; <--- 결과는 10+31+2 = 43
 ```
+
+### True(참) / False(거짓) / not (!)연산자
+
+```
+mysql> select true;
+mysql> select True;  <-- mysql에서는 대소문자를 구분하지 않습니다 
+mysql> selct false;
+mysql> select !true;
+mysql> select !False;
+````    
+<img width="200" alt="스크린샷 2023-04-03 오후 10 18 05" src="https://user-images.githubusercontent.com/48478079/229521733-c8a9d790-565a-41ac-a048-da2d883131d5.png"> <img width="200" alt="스크린샷 2023-04-03 오후 10 18 16" src="https://user-images.githubusercontent.com/48478079/229521497-81ddd175-ef75-47aa-9c81-fe7c8aed5036.png">    
+
+위의 결과에서 보듯이 true는 1 , false는 0으로 간주됩니다.   
+
+<img width="200" alt="스크린샷 2023-04-03 오후 10 22 57" src="https://user-images.githubusercontent.com/48478079/229522675-4fdfe557-134c-4e90-be3b-282bdf6befb4.png"> <img width="200" alt="스크린샷 2023-04-03 오후 10 23 11" src="https://user-images.githubusercontent.com/48478079/229522686-2d5cfadb-16de-4c63-8c8a-cc11fa18f615.png">
+
+
+ 
