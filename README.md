@@ -49,5 +49,5 @@ mysql> select not 1;
 
 <img width="200" alt="스크린샷 2023-04-03 오후 10 22 57" src="https://user-images.githubusercontent.com/48478079/229522675-4fdfe557-134c-4e90-be3b-282bdf6befb4.png"> <img width="200" alt="스크린샷 2023-04-03 오후 10 23 11" src="https://user-images.githubusercontent.com/48478079/229522686-2d5cfadb-16de-4c63-8c8a-cc11fa18f615.png">   
 부정연산자(!)는 반대의 의미로 해석하시면 됩니다. 부정의 부정은 원래값입니다.   
-<img width="200" alt="스크린샷 2023-04-03 오후 10 27 43" src="https://user-images.githubusercontent.com/48478079/229523875-59bb68e2-b27a-4e3b-ae03-c9540d7c8fd1.png"> <img width="200" alt="스크린샷 2023-04-03 오후 10 29 23" src="https://user-images.githubusercontent.com/48478079/229524299-7cb8364b-3c9b-48f2-96c5-9342c8c0d490.png">
+<img width="200" alt="스크린샷 2023-04-03 오후 10 27 43" src="https://user-images.githubusercontent.com/48478079/229523875-59bb68e2-b27a-4e3b-ae03-c9540d7c8fd1.png"> <img width="170" alt="스크린샷 2023-04-03 오후 10 29 23" src="https://user-images.githubusercontent.com/48478079/229524299-7cb8364b-3c9b-48f2-96c5-9342c8c0d490.png">
 
