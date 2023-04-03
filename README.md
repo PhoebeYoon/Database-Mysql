@@ -2,7 +2,7 @@
 
 ## 터미널에서 연산자에 대해 알아보겠습니다.  
 c언에서는 print문으로 웹의 개발자도구에서는 console.log 명령을 이용하듯이 여기서는 select문을 사용해야 합니다. 
-### 사직연산 ( +  - * / % )
+### 사칙연산 ( +  - * / % )
 ```
 mysql>select 10+20; 
 mysql>select 10-20;
@@ -50,4 +50,46 @@ mysql> select not 1;
 <img width="200" alt="스크린샷 2023-04-03 오후 10 22 57" src="https://user-images.githubusercontent.com/48478079/229522675-4fdfe557-134c-4e90-be3b-282bdf6befb4.png"> <img width="200" alt="스크린샷 2023-04-03 오후 10 23 11" src="https://user-images.githubusercontent.com/48478079/229522686-2d5cfadb-16de-4c63-8c8a-cc11fa18f615.png">   
 부정연산자(!)는 반대의 의미로 해석하시면 됩니다. 부정의 부정은 원래값입니다.   
 <img width="200" alt="스크린샷 2023-04-03 오후 10 27 43" src="https://user-images.githubusercontent.com/48478079/229523875-59bb68e2-b27a-4e3b-ae03-c9540d7c8fd1.png"> <img width="170" alt="스크린샷 2023-04-03 오후 10 29 23" src="https://user-images.githubusercontent.com/48478079/229524299-7cb8364b-3c9b-48f2-96c5-9342c8c0d490.png">
+## 비교연산자 
 
+|연산자 | 설명 |
+|---|---|
+| and,&&| 피연산자가 모두 참일때만 결과가 참 |
+| or,| 피연산자 중 하나라도 참이면 결과는 참, 피연산자 모두 거짓이면 결과는 거짓 |
+
+
+|연산자 | 설명 |
+|---|---|
+| > | 좌변이 우변의 값보다 크다|
+| < | 좌변이 우변보다 작다 |
+| = |  좌우의 값이 같다 |
+|>=| 좌변의 값이 우변의 값보다 크거나 같다| 
+|<=| 좌변의 값이 우변의 값보다 작거나 같다| 
+| = |  좌우의 값이 같다 |
+| != , <> | 좌변와 우변이 같지않다 |
+
+```
+mysql> select  10>2;
+mysql> select  10<2;
+mysql> select  10=2;
+mysql> select  10=10;
+mysql> select  10>=10;
+mysql> select  10 !=2;
+mysql> select 10 <>10;
+mysql> select 'A' ='a';  <-- 결과는 1
+mysql> select 'A' !='a'; <-- 결과는 0
+mysql> select 'A' > 'b';
+mysql> select 'A' < 'b';
+mysql> select 'A' < 'B'; <-- 결과는 1
+mysql> select 'A' > 1;   <-- 결과는 0
+mysql> select 'A' < '1'; <-- 결과는 1
+```
+'A' 와 'a'의 비교에서 대소문자를 구분하지 않으니 아스키코드값으로 계산하면 문자가 숫자보다 코드값이 더 높다.  
+그렇지만 숫자와문자가 섞여서 계산될때 문자는 0으로 처리되기 때문에 'A'> 1 의 결과는 0이다. 
+
+
+
+
+
+
+##  
