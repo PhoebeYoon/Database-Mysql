@@ -1,6 +1,6 @@
 ###### :cactus:  Mysql
 
-
+## 날짜, 시간 함수들 
 | 함수 | 설명 |
 |---|---|
 | date |문자열에 따라 날짜 생성 | 
@@ -20,6 +20,7 @@
 | time_diff |두 시간/날짜 간 시간차 |
 | last_day| 해당 달의 마지막 날짜 |
 | date_format |	시간/날짜를 지정한 형식으로 반환 |
+| STR _ TO _ DATE(S, F)	|S를 F형식으로 해석하여 시간/날짜 생성 |
 
 | 형식	| 설명 |
 |---|---|
@@ -36,3 +37,36 @@
 | %i	| 분|
 | %S, %s| 초|
 | %p	| AM/PM|
+
+
+```
+mysql> select adddate('2020-04-05', interval 1 year);
+mysql> select adddate('2020-04-05', interval 2 month);
+mysql> select adddate('2020-04-05', interval -5 month);
+mysql> select adddate('2020-04-05', interval -2 month);
+mysql> select adddate('2020-04-05', interval -5 day);
+mysql> select adddate('2020-04-05', interval 5 week);
+mysql> select hour(now()), minute(now()), second(now());
+
+mysql> select now();
+mysql> select date_format( now(), '%y,%m,%d,%T');
+mysql> select date_format( now(), '%Y,%M,%D,%T');
+mysql> select date_format( now(), '%Y년,%M월 ,%D일 ,시간: %T');
+
+mysql> Select timediff ('2021-06-21 15:20:35', '2023-04-05 16:34:41');
+```
+
+<img width="350" alt="스크린샷 2023-04-04 오전 11 54 27" src="https://user-images.githubusercontent.com/48478079/229675053-cf0facb1-fe0d-4b3c-9cea-9b5610972ae9.png">
+
+<img width="350" alt="스크린샷 2023-04-04 오전 11 54 39" src="https://user-images.githubusercontent.com/48478079/229675068-235d280d-115f-4a95-8946-3a97b2243aee.png">
+
+
+## 조건문  
+if(조건, 만족했을때, 불만족했을때) : 간단한 조건문에 사용합니다  
+ifnull(m,n) : m이 null 이라면 n을 출력합니다  
+```
+mysql> select if(10>12 , 'ten','twelve');
+mysql> select ifnull(null,'ok');
+
+```
+
