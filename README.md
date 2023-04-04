@@ -22,3 +22,16 @@
 | REPLACE(S, A, B)| 	S중 A를 B로 변경 |cast(a as t)	|A를 T 자료형으로 변환 |
 | REPLACE(S, A, B)| 	S중 A를 B로 변경 |cast(a as t)	|A를 T 자료형으로 변환 |
 | convert(a, t)	| A를 T 자료형으로 변환 |  |
+
+
+```
+mysql> select round(4.4),round(4.5), round(4.6);
+mysql> select ceil(4.4),ceil(4.5), ceil(4.6);
+mysql> select floor(4.4),floor(4.5), floor(4.6);
+```
+
+<img width="200" alt="스크린샷 2023-04-04 오전 9 25 46" src="https://user-images.githubusercontent.com/48478079/229655224-a3e653b4-7490-471b-bbf8-9ef1a620df9b.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 25 53" src="https://user-images.githubusercontent.com/48478079/229655248-b87bf124-7e7a-4f9f-aed5-60c7c1069cf6.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 26 00" src="https://user-images.githubusercontent.com/48478079/229655254-a888c5d8-e26a-49f9-b4fe-9e11cce42b38.png">
+
+
+
+
