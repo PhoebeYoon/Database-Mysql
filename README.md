@@ -58,4 +58,17 @@ from sakila.actor;
 ```
 
 
+## 외부에 있는 sql로 된 파일을 import해 봅시다
+1. 첨부된 파일의 압축을 풀면 'sakila'라는 이름으로 되어 있습니다. 그 폴더안에는 많은 .sql 파일을 모두 불러올 예정입니다.
+2. workbench를 실행시키고 같은 이름의 스키마를 만듭니다. 
+3. 왼쪽패널 > 'Administration' > Data Import / Restore 
+4. 'Import from Dump Project Folder'에서 압축해제한 폴더를 선택합니다.  그러면 아래쪽에 스키마에 'sakila' 나타납니다.
+5. 이름을 클릭하면 오른쪽 칸에 sql 파일이 쭈욱 나타납니다.
+6. 우측 아래쪽의 'Start Import' 버튼을 클릭합니다. 
+
+<img width="671" alt="스크린샷 2023-04-04 오후 2 24 19" src="https://user-images.githubusercontent.com/48478079/229698052-699e9fae-a427-4e94-86f3-028656fbc75c.png">
+
+
+<img width="452" alt="스크린샷 2023-04-04 오후 2 30 09" src="https://user-images.githubusercontent.com/48478079/229698111-9a312c9f-3a7c-4cea-80a2-639f84a5e8a6.png">
+
 
