@@ -35,9 +35,18 @@ mysql> select floor(4.4),floor(4.5), floor(4.6);
 ```
 mysql> select abs(-5),abs(5),abs(+4.6),abs(-4.6),abs(10-4),abs(4-10);
 mysql> select greatest(3,7,1,16,'A','d','가',20);
+mysql> select least(3,7,1,-16,'A','d','가',20);
+
+mysql> select sqrt(16);
+mysql> select power(3,3);
+
+mysql> select truncate(12345.6789,1);
+mysql> select truncate(12345.6789,3);
+mysql> select truncate(12345.6789,-1);  <-- 마이너스 값이 들어오면 그 숫자만큼 소숫점 왼쪽을 0으로 채웁니다 
+mysql> select truncate(12345.6789,-3);  <-- -3이니까 소숫점 왼쪽 3자리를 0으로 채웁니다
+mysql> select truncate(12345.6789,0); <-- 0 이 들어오면 정수값만 취합니다
 
 ```
-
 abs는 +,-를 제외하고 값만 출력하기 때문에 계산뒤에도 부호없이 값만 출력된다.   
 ascii 코드라고 아실겁니다. ascii코드는 영,숫자,특수기호몇개로 이루어져 있어서 한글은 ascii코드표에 없지요. 그래서 unicode표에서 찾아야 합니다.  
 숫자: 48-57   
@@ -45,3 +54,7 @@ ascii 코드라고 아실겁니다. ascii코드는 영,숫자,특수기호몇개
 특수기호: 33-47, 58-64, 91-96, 123-126   
 한글: 12592이상, 12687이하   
 http://www.unicode.org/charts/ 사이트가시면 알 수 있습니다. 
+
+
+<img width="200" alt="스크린샷 2023-04-04 오전 9 52 45" src="https://user-images.githubusercontent.com/48478079/229658532-6d413289-6776-4896-ba4a-2d1df7e7a99f.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 52 51" src="https://user-images.githubusercontent.com/48478079/229658536-6de7697f-6365-42a2-9502-80492b9d1b08.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 55 27" src="https://user-images.githubusercontent.com/48478079/229658783-29332dd6-a053-4c68-a45d-49913f0cd413.png">
+
