@@ -50,7 +50,12 @@ desc student;
 
 <img width="450" alt="스크린샷 2023-04-04 오후 1 59 33" src="https://user-images.githubusercontent.com/48478079/229691145-e07ddd28-92a4-46a8-b536-e786187542f6.png">
 
-
+### 다른 디비에 있는 테이블에서 칼럼을 가져와 테이블을 만듭니다. 
+```
+create table othertable as
+select actor_id
+from sakila.actor;
+```
 
 
 
