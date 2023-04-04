@@ -67,8 +67,20 @@ mysql> select substr('helloworld',2); <-- 2번째부터 읽어서 출력결과�
 mysql> select substr('helloworld',1); <-- 1번째부터 읽으니까 출력결과는 'helloworld'
 mysql> select substr('helloworld',4); <-- 4번째부터 읽으니까 출력결과는 'loworld'
 mysql> select substr('helloworld',3,4); <-- 3번째부터 4개를 읽으니까 출력결과는 'llow'
-mysql> select substr('helloworld',-3); <-- 마이너스는 뒤에서부터 읽습니다. 그래서 뒤에서부터 3개, 출력결과는'rld'
-mysql> select substr('helloworld',-6,3); <-- 마이너스니까 뒤에서부터 6번째부터 출발합니다. 6번째위치는 첫번째 'o' 입니다. 거기서부터 출발해서 오른쪽으로 3개 읽습니다. 결과는 'owo'
+mysql> select substr('helloworld',-3); <-- 마이너스는 뒤에서부터 읽습니다. 
+                                           그래서 뒤에서부터 3개, 출력결과는'rld'
+mysql> select substr('helloworld',-6,3); <-- 마이너스니까 뒤에서부터 6번째부터 출발합니다.
+                                             6번째위치는 첫번째 'o' 입니다. 
+                                             거기서부터 출발해서 오른쪽으로 3개 읽습니다. 결과는 'owo'
+                                             
+mysql> select left('helloworld',5);
+mysql> select right('helloworld',5);
+mysql> select length('helloworld');
+
+mysql> select length('helloworld');  <-- 결과 10
+mysql> select char_length('helloworld'); <-- 결과 10
+mysql> select character_length('helloworld'); <-- 결과 10 모두 동일합니다
+
 ```
 
 upper('a','c') 이런식은 에러입니다. 단일 문자열이어야 합니다. 
