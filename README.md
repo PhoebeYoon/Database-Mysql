@@ -70,4 +70,11 @@ from sakila.actor;
 
 <img width="124" alt="스크린샷 2023-04-04 오후 2 43 07" src="https://user-images.githubusercontent.com/48478079/229698326-a933c53a-fc81-4e4e-8af7-b2ed702bc199.png">
 
+전체가 아닌 일부만 import할 수도 있습니다.   
+
+<img width="452" alt="스크린샷 2023-04-04 오후 2 30 09" src="https://user-images.githubusercontent.com/48478079/229698749-2aefc6f3-defd-4027-b57d-d56fc0e07022.png">
+
+
+이때 중요한 것은 임폴트하려는 스키마를 먼저 생성해놓고 import 시킵니다. 그렇지 않으면 
+'ERROR 1049 (42000): Unknown database' 가 발생합니다. 
 
