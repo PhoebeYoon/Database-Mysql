@@ -67,6 +67,6 @@ ifnull(m,n) : m이 null 이라면 n을 출력합니다
 ```
 mysql> select if(10>12 , 'ten','twelve');
 mysql> select ifnull(null,'ok');
-
+mysql> select ifnull('','ok'); <-- 공백은 null 이 아닙니다 
 ```
 
