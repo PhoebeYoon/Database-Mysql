@@ -82,7 +82,7 @@ from sakila.actor;
 
 ```
 -- 현재 testdb에 있습니다.
-create tabel wellknownpeople as
+create table wellknownpeople as
 select title, release_year, rating
 from sakila.film;
 ```    
