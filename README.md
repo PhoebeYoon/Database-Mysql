@@ -116,11 +116,21 @@ mysql> select ( 1 + convert('1', decimal)); <-- 문자 '1'를 decimal(10진수)�
 
 mysql> select hex(10); <-- 10을 16진수로 계산합니다. 결과는 A
 mysql> select hex(255); <-- 255를 16진수로 계산하면 FF 입니다 
+mysql> select bin(16), oct(16), hex(16), conv(16, 10, 2);
+
 mysql> select char(0x41), hex('41'), unhex('41');
 mysql> select unhex('\0');
+mysql> select unhex('\n');
+mysql> select x'00'='\0';
+mysql> select '\"'= x'22';
+mysql> select '\n' = x'0a';
+mysql> select '\r' = x'0d';
+mysql> select '\t' = x'09';
 
 ```
 
+BIN(숫자): 숫자를 2진수로 변환 , OCT(숫자): 숫자를 8진수로 변환 , HEX(숫자): 숫자를 16진수로 변환    
+CONV(숫자, 기존진법, 바꿀진법): 숫자를 기존 진법에서 바꿀 진법으로 계산 
 
 
 
