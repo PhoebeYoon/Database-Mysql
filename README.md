@@ -38,18 +38,6 @@ NoSQL(Not Only SQL): 데이터-테이블간의 관계를 정의하지 않는 데
 
 위에서 설명한 내용은 데이터베이스라는 것을 설명한 것입니다. 
 
-## 그럼 우리가 다룰  mySql는 뭔가요?
-데이터베이스를 종이에 적어서 관리할 수는 없잖아요. 그래서 관리해주는 프로그램을 만들었는데 이걸 DBMS라고 부릅니다. 
-대표적으로 MySQL, 오라클(Oracle), SQL 서버, MariaDB 등이 있습니다.    
-
-| DBMS|	제작사|	작동운영체제	| 기타 |
-|----|---|---|---|
-| MySQL	|Oracle	|Unix, Linux, Windows, Mac	|오픈 소스(무료), 상용|
-| MariaDB|MariaDB	 |Unix, Linux, Windows	|오픈 소스(무료),MySQL 초기 개발자들이 독립해서 만듦|
-|Oracle|	Oracle	|Unix, Linux, Windows|	상용 시장 점유율 1위|
-| Access |	Microsoft|	Windows	|PC용|
-| SQLite	|SQLite	|Android, iOS	|모바일 전용, 오픈 소스(무료)|
-
 ## 실습을 위한 준비
 1. mySql 다운로드 https://dev.mysql.com/downloads/mysql/
 2. 윈도우 버전 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. 특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.    
