@@ -78,7 +78,6 @@ case when 조건1  then 결과값1
          when 조건4  then 결과값4
          else 결과값5
 end
-```
-
-
-
+```   
+자세한 실습은 터미널에서가 아닌 workbench에서 해보겠습니다.  
+여기까지 잘 따라오셨습니다 
