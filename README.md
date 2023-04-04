@@ -30,8 +30,18 @@ mysql> select ceil(4.4),ceil(4.5), ceil(4.6);
 mysql> select floor(4.4),floor(4.5), floor(4.6);
 ```
 
-<img width="200" alt="스크린샷 2023-04-04 오전 9 25 46" src="https://user-images.githubusercontent.com/48478079/229655224-a3e653b4-7490-471b-bbf8-9ef1a620df9b.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 25 53" src="https://user-images.githubusercontent.com/48478079/229655248-b87bf124-7e7a-4f9f-aed5-60c7c1069cf6.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 26 00" src="https://user-images.githubusercontent.com/48478079/229655254-a888c5d8-e26a-49f9-b4fe-9e11cce42b38.png">
+<img width="200" alt="스크린샷 2023-04-04 오전 9 25 46" src="https://user-images.githubusercontent.com/48478079/229655224-a3e653b4-7490-471b-bbf8-9ef1a620df9b.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 25 53" src="https://user-images.githubusercontent.com/48478079/229655248-b87bf124-7e7a-4f9f-aed5-60c7c1069cf6.png"> <img width="200" alt="스크린샷 2023-04-04 오전 9 26 00" src="https://user-images.githubusercontent.com/48478079/229655254-a888c5d8-e26a-49f9-b4fe-9e11cce42b38.png">    
 
+```
+mysql> select abs(-5),abs(5),abs(+4.6),abs(-4.6),abs(10-4),abs(4-10);
+mysql> select greatest(3,7,1,16,'A','d','가',20);
 
+```
 
-
+abs는 +,-를 제외하고 값만 출력하기 때문에 계산뒤에도 부호없이 값만 출력된다.   
+ascii 코드라고 아실겁니다. ascii코드는 영,숫자,특수기호몇개로 이루어져 있어서 한글은 ascii코드표에 없지요. 그래서 unicode표에서 찾아야 합니다.  
+숫자: 48-57   
+영어: 65-90, 97-122   
+특수기호: 33-47, 58-64, 91-96, 123-126   
+한글: 12592이상, 12687이하   
+http://www.unicode.org/charts/ 사이트가시면 알 수 있습니다. 
