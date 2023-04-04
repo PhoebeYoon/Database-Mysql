@@ -13,7 +13,7 @@
 | least | ()값중 제일 작은 값을 반환 |left |왼쪽부터 n개의 글자 추출합니다 |
 | max | 가장 큰 값을 반환 |right |	오른쪽부터 n개의 글자를 추출합니다 |
 | min |가장 작은 값을 반환 |length|문자열의 바이트 길이 |
-| count	 |갯수 (NULL값 제외)|char_lenght, character_length| 문자열의 문자 길이 |
+| count	 |갯수 (NULL값 제외)|char_length | 문자열의 문자길이 |
 | sum|합계를 구합니다|trim	|양쪽 공백 제거|
 | avg	 | 평균값을 구합니다 |ltrim	|왼쪽 공백 제거 |
 | sqrt | 제곱근을 구합니다 |rtrim| 오른쪽 공백 제거 |
@@ -81,6 +81,12 @@ mysql> select length('helloworld');  <-- 결과 10
 mysql> select char_length('helloworld'); <-- 결과 10
 mysql> select character_length('helloworld'); <-- 결과 10 모두 동일합니다
 
+mysql> select character_length('한글');
+mysql> select length('한글');
 ```
 
-upper('a','c') 이런식은 에러입니다. 단일 문자열이어야 합니다. 
+upper('a','c') 이런식은 에러입니다. 단일 문자열이어야 합니다.  
+char_length()은 스트링, 문자의 길이를 리턴하고 
+length()는 bytes를 계산합니다 그래서 영문의 경우는 모두 동일하지만 한글의 경우에는 달라집니다.   char_length는 character_length와 동의어입니다.  
+
+<img width="220" alt="스크린샷 2023-04-04 오전 10 26 24" src="https://user-images.githubusercontent.com/48478079/229662474-ac4fa2da-c9e9-4e5f-908f-23bd17d13822.png"> <img width="170" alt="스크린샷 2023-04-04 오전 10 26 28" src="https://user-images.githubusercontent.com/48478079/229662480-67912d34-7a7e-4118-931d-3ad1af6f86ea.png">
