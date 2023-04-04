@@ -68,7 +68,6 @@ from sakila.actor;
 
 <img width="671" alt="스크린샷 2023-04-04 오후 2 24 19" src="https://user-images.githubusercontent.com/48478079/229698052-699e9fae-a427-4e94-86f3-028656fbc75c.png">
 
-
-<img width="452" alt="스크린샷 2023-04-04 오후 2 30 09" src="https://user-images.githubusercontent.com/48478079/229698111-9a312c9f-3a7c-4cea-80a2-639f84a5e8a6.png">
+<img width="124" alt="스크린샷 2023-04-04 오후 2 43 07" src="https://user-images.githubusercontent.com/48478079/229698326-a933c53a-fc81-4e4e-8af7-b2ed702bc199.png">
 
 
