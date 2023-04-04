@@ -78,3 +78,17 @@ from sakila.actor;
 이때 중요한 것은 임폴트하려는 스키마를 먼저 생성해놓고 import 시킵니다. 그렇지 않으면 
 'ERROR 1049 (42000): Unknown database' 가 발생합니다. 
 
+여기까지 잘 실습이 되었다면 아래의 명령을 실습해보겠습니다. 
+
+```
+-- 현재 testdb에 있습니다.
+create tabel wellknownpeople as
+select title, release_year, rating
+from sakila.film;
+```    
+결과를 확인해보십시요.   
+이렇게해서 스카마 생성, 삭제, 테이블삭제, 다른 디비에서 테이블가져오기, 외부파일가져오기등을 실습했습니다.
+다음 레슨에서는 테이블안의 내용을 가지고 실습해보도록 하겠습니다
+
+
+
