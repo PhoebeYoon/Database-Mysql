@@ -70,3 +70,6 @@ SQL은 데이터를 쿼리, 조작 및 정의하고 액세스 제어를 제공�
 | Access |	Microsoft|	Windows	|PC용|
 | SQLite	|SQLite	|Android, iOS	|모바일 전용, 오픈 소스(무료)|
 
+
+
+참조 : https://www.oracle.com/kr/database/what-is-database/
