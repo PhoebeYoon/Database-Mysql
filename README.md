@@ -33,8 +33,29 @@ create user 'general1'@'localhost' identified by '1234';
 select * from user;
 ```
 general1이라는 유저를 생성하고 이 사용자가 사용할 비번으로 '1234'를 접속하는 위치는 로컬컴으로 등록했습니다. 
+결과를 보면 'general1' 유저가 등록되어 있습니다.    
+<img width="161" alt="스크린샷 2023-04-05 오후 6 48 41" src="https://user-images.githubusercontent.com/48478079/230045672-97b18853-5b5e-4cba-84b4-881396763fb7.png">
+
+이렇게 사용자를 만들고 나면 이 general1 사용자가 갖는 권한을 지정해야 합니다. 권한을 지정하지않고 사용자만 만들면 소용이 없습니다.
+```
+grant all privileges on testdb.* to 'general1'@'localhost';
+```
+'general1' 사용자는 testdb라는 디비에 관한 모든 권한을 부여한다는 것입니다. 
 
 
 
+이제 workbench프로그램의 상단왼쪽의 🏠 클릭해서 'MySQL Connections'화면으로 넘어갑니다.  
+➕ 클릭하여 'general1' 유저가 사용할 접속을 만들어보겠습니다.   
+
+<img width="400" alt="스크린샷 2023-04-05 오후 6 56 22" src="https://user-images.githubusercontent.com/48478079/230047781-4c17c573-b354-4044-a4f7-4f2308590560.png">
+
+'general1'사용자로 접속해서 왼쪽패널의 'Administration' 탭을 클릭하고 'User Accounts'에서 'general1'를 선택합니다.   
+그리고 오른쪽 화면에 'Administrative Roles'를 선택하면 아래와 같이 보일것입니다.   
+
+
+<img width="550" alt="스크린샷 2023-04-05 오후 7 18 29" src="https://user-images.githubusercontent.com/48478079/230053604-17009314-c3fd-4593-89bf-9cef968a69d7.png">
+
+참고로 아래는 'root' 사용자의권한입니다.   
+<img width="550" alt="스크린샷 2023-04-05 오후 7 22 52" src="https://user-images.githubusercontent.com/48478079/230053806-15b761a5-5723-41d7-8cb1-eaa725392764.png">
 
 
