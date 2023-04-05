@@ -59,4 +59,24 @@ grant all privileges on testdb.* to 'general1'@'localhost';
 <img width="550" alt="스크린샷 2023-04-05 오후 7 22 52" src="https://user-images.githubusercontent.com/48478079/230053806-15b761a5-5723-41d7-8cb1-eaa725392764.png">
 
 
+#### 권한 조회하기
+```
+show grants for 'general1'@'localhost';
+```
+#### 권한 삭제
+```
+revoke delete on testdb.* from 'general1'@'localhost' ;
+```    
+#### 사용자 삭제 
+```
+drop user 'general1'@'localhost';
+```   
+
+
+
+
+
+
+
+
 
