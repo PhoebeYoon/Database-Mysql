@@ -1,9 +1,14 @@
 ###### :cactus:  Mysql
 
 ## 이 수업에서는 이런것을 배웁니다
-1. sql의 기초문법이해   
-    - 데이터베이스의 개념
-    - Sql vs no Sql 뭔지
+1. 데이터베이스 개념
+    - SQL vs NoSQL
+    - row, column, record, 스키마
+    - mySql 프로그램 다운로드 및 설치
+    - 터미널을 이용해서 mysql 맛보기
+2. sql의 기초문법이해   
+    - 
+    - mysql 사용자권한
     - 관계형데이터베이스 mysql의 설치 및 실행
     - mysql를 터미널를 통해 간단한 디비 맛보기
     - sql로 데이터베이스 만들기
