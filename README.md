@@ -100,6 +100,14 @@ SELECT * FROM sales
 			WHERE sales.order_date = orders.order_date);  
 ```
 
+여기서 한가지를 더 추가하겠습니다.   
+```
+SELECT * FROM sales S  -- sales 를 S로 칭하겠습니다 
+	WHERE NOT EXISTS 
+		(SELECT * FROM orders  O  -- orders 를 O 로 칭하겠습니다 
+			WHERE S.order_date = O.order_date); 
+```
+
 
 ## 조건이 여러개 일때 사용하는 case문
 형식 :    
@@ -112,4 +120,21 @@ CASE
 	ELSE 'WHEN 조건에 해당 안되는 경우 반환 값'
 END
 ```
-when와 then은 한쌍입니다. else는 when의 조건에 만족하지 않을때 실행됩니다.    
+when와 then은 한쌍입니다. else는 when의 조건에 만족하지 않을때 실행됩니다. 실습을 위해 테이블 buy에 새로운 comments 라는 필드를 추가하도록 합니다.  
+
+```
+SELECT * FROM market_db.buy;
+alter table buy add commnets varchar(100) after amount;
+select count( distinct (mem_id)) from buy;
+
+select  *,
+	case 
+		when mem_id ='blk' then '에이기획사에서 주문'
+		when mem_id='apn' then '비씨 기획사에서 주문'
+        when mem_id='mmu' then '비씨 기획사에서 주문'
+        when mem_id='grl' then '비씨 기획사에서 주문'
+        else 'NEW'
+	end as comments 
+    from market_db.buy;
+```
+결과를 확인하세요  
