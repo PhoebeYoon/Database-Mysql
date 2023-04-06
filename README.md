@@ -57,6 +57,7 @@ mysql> insert into orders(id, order_date, amount)
       (7, '2021-01-30',250),
       (8, '2021-01-31',250),
       (9, '2021-02-01',250);
+mysql> SELECT * FROM sales  WHERE NOT EXISTS(SELECT * FROM orders  WHERE sales.order_date = orders.order_date);
 ```
 
 
