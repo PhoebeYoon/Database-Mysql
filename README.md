@@ -39,6 +39,30 @@ select * from market_db.member where phone1 not in ('02', '031');
 | EXISTS | 서브쿼리의 결과를 만족하는 값이 존재하는지 여부를 확인하는 조건을 의미한다. |
 
 ```
+select mem_id, mem_name from market_db.member 
+where mem_id = 'APN';
+
+select mem_id, mem_name from market_db.member 
+where mem_id = ( SELECT mem_id from market_db.buy where prod_name ="맥북프로");
+
+
+select mem_id, mem_name from market_db.member 
+where mem_id in ( SELECT mem_id from market_db.buy where prod_name ="아이폰");
+
+select mem_id, mem_name from market_db.member 
+where mem_id > all ( SELECT mem_id from market_db.buy where price > 50);
+
+--  여기부터 
+select mem_id, mem_name from market_db.member 
+where mem_id = any (SELECT mem_id from market_db.buy where price>80); 
+-- any를 빼면 결과가 없다고 나온다 
+-- 위와 같은 조건으로 결과가 나온다. 하지만 위의 조건에서는 any를 주어야 한다
+SELECT mem_id , price FROM market_db.buy where price >80;
+-- 여기까지가 하나의 예제 
+```
+
+#### exists 와 not exists 실습을 위해 간단한 테이블을 2개 만들겠습니다. 
+```
 mysql> create table sales(id int, order_date date, amount int);
 mysql> insert into sales(id, order_date, amount)
       values(1, '2021-01-24',250),
@@ -60,14 +84,32 @@ mysql> insert into orders(id, order_date, amount)
 mysql> SELECT * FROM sales  WHERE NOT EXISTS(SELECT * FROM orders  WHERE sales.order_date = orders.order_date);
 ```
 
+workbench 에서 실행합니다. 
+```
+use market_db;
+select * from sales;
+select * from orders;
+
+SELECT * FROM sales  
+	WHERE NOT EXISTS 
+		(SELECT * FROM orders  
+			WHERE sales.order_date = orders.order_date);   
+SELECT * FROM sales  
+	WHERE EXISTS 
+		(SELECT * FROM orders  
+			WHERE sales.order_date = orders.order_date);  
+```
+
 
 ## 조건이 여러개 일때 사용하는 case문
 형식 :    
 ```
-CASE 
-    WHEN 조건식1 THEN 식1
-    WHEN 조건식2 THEN 식2
-    ...
-    ELSE 조건에 맞는경우가 없는 경우 실행할 식
+CASE
+	WHEN 조건
+	THEN '반환 값'
+	WHEN 조건
+	THEN '반환 값'
+	ELSE 'WHEN 조건에 해당 안되는 경우 반환 값'
 END
 ```
+when와 then은 한쌍입니다. else는 when의 조건에 만족하지 않을때 실행됩니다.    
