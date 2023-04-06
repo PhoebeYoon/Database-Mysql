@@ -58,7 +58,29 @@ SELECT addr, mem_number FROM market_db.member group by addr, mem_number;
 | MIN	 | 그룹중에가장 작은 값 |
 | COUNT | 그룹의 갯수를 셉니다 (NULL값 제외) |
 | SUM	| 그룹별로 합계를 구합니다 |
-|AVG |	룹별로 평균를 구합니다 |
+| AVG |	룹별로 평균를 구합니다 |
+
+#### 그룹중에서 지역별로 평균키를 알고자 합니다 
+```
+-- 그룹화 + 함수 사용하기
+SELECT * FROM market_db.member ;
+SELECT addr, count(*) FROM market_db.member group by addr;
+
+-- 주소로 그룹한 뒤에 해당 지역별이 몇개 있는지 
+SELECT debut_date, count(*) FROM market_db.member group by debut_date;
+SELECT addr, avg(height) FROM market_db.member group by addr;
+select addr, max(height) from market_db.member group by addr;
+select addr, max(height), min(height) from market_db.member group by addr;
+
+```
+```
+SELECT * FROM market_db.buy;
+select prod_name, max(price) from market_db.buy group by prod_name;
+select prod_name, min(price), avg(price) from market_db.buy group by prod_name;
+select prod_name, min(price), ceil(avg(price)) from market_db.buy group by prod_name;
+select prod_name, count(price), sum(price) from market_db.buy group by prod_name;
+
+```
 
 
 
