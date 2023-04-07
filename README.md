@@ -103,7 +103,7 @@ select 컬럼 from 테이블 where 조건
 <img width="450" alt="스크린샷 2023-03-30 오후 6 48 27" src="https://user-images.githubusercontent.com/48478079/228798278-82a1cd37-188c-46c7-86aa-b18e84f40e2d.png"> 
       
       
-      
+아래 내용은 mysql를 사용해서 db에 접속하는 코드입니다. 일반적인 코드이며 개별 디비의 상황에따라 내용은 달라질 수 있습니다.  디비에 접속해서 데이터를 조회하려면 사용자에 대한 정보와 데이터베이스에 대한 정보를 넣고 쿼리문이라는 것을 이용해서 원하는 정보를 가져올 수 있습니다.    
 ```
 var mysql = require('mysql');
 var connection = mysql.createConnection({
@@ -115,7 +115,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query(' SELECT * FROM topic', function(err, results, fields){
+connection.query(' SELECT * FROM sampledb', function(err, results, fields){
       if(err){
             console.log(err)
       } 
