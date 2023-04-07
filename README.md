@@ -39,6 +39,7 @@
  - 연습문제2
 ### freecodecamp 
 [React]   
-<img width="400" alt="스크린샷 2023-04-06 오후 4 48 32" src="https://user-images.githubusercontent.com/48478079/230311300-93762d7a-ba6f-4d51-9e1b-246149fd4953.png">   
+![Uploading 스크린샷 2023-04-06 오후 4.50.55.png…]()
+
 📝  Set State with this.setState 까지 복습합니다.     
 
