@@ -43,7 +43,7 @@ mysql> show variables where Variable_Name like "%dir%";
 
 <img width="600" alt="스크린샷 2023-04-01 오후 3 51 42" src="https://user-images.githubusercontent.com/48478079/229270631-40b5b2ab-cfa3-461c-a662-897b0280b7eb.png">
 
-:pencil: _일반적으로 사용하는 문자는 utf8로 가능하지만 MySQL, MariaDB는 utf8로 세팅하는 경우 emoji문자가 입력되지 않습니다 이것을 해결해주는 것이 utf8mb4 라는 charset입니다_  
+###### :pencil: _일반적으로 사용하는 문자는 utf8로 가능하지만 MySQL, MariaDB는 utf8로 세팅하는 경우 emoji문자가 입력되지 않습니다 이것을 해결해주는 것이 utf8mb4 라는 charset입니다 이 코드는 디비를 위해 사용하는 코드이며 일반 html에서는 utf8를 사용합니다_   
 
 ## mysql 설정보기 
 ```  mysql> status;  ```  
