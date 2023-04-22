@@ -79,4 +79,4 @@ SQL은 데이터를 쿼리, 조작 및 정의하고 액세스 제어를 제공�
 
 
 
-참조 : https://www.oracle.com/kr/database/what-is-database/
+참조 : https://www.oracle.com/kr/database/what-is-database/    
