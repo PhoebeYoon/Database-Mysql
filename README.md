@@ -25,8 +25,8 @@ mysql를 사용하려면 유저 (관리자)가 있어야 하는데 기본적인 
 
 
 
-## 한글설정 및 환경설정 내용보기  
-먼저 mysql의 설정파일은 다음과 같습니다 
+## 한글설정 및 환경설정 내용보기   
+먼저 mysql의 설정파일은 다음과 같습니다 ( 설치하는 내용은 다음 레슨에 있습니다 )  
 - Mac에서는 my.cnf <-- mysql에서 사용하는 환경설정파일입니다 
 - windows는 my.ini 파일입니다  
 
@@ -43,6 +43,7 @@ mysql> show variables where Variable_Name like "%dir%";
 
 <img width="600" alt="스크린샷 2023-04-01 오후 3 51 42" src="https://user-images.githubusercontent.com/48478079/229270631-40b5b2ab-cfa3-461c-a662-897b0280b7eb.png">
 
+:pencil: _일반적으로 사용하는 문자는 utf8로 가능하지만 MySQL, MariaDB는 utf8로 세팅하는 경우 emoji문자가 입력되지 않습니다 이것을 해결해주는 것이 utf8mb4 라는 charset입니다_  
 
 ## mysql 설정보기 
 ```  mysql> status;  ```  
