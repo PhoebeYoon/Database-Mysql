@@ -5,7 +5,7 @@
 ``` 
 mysql -uroot -p
 Enter password:  비번 입력합니다 
-mysql> <-- 요렇게 프롬프트가 나오는지 확인하세  
+mysql> <-- 요렇게 프롬프트가 나오는지 확인하세요  
 (mysql설치시 샘플용 디비가 있습니다 이것을 사용해 보겠습니다)
 mysql>SHOW DATABASES; <-- 끝에 's' 있습니다  
 ```    
