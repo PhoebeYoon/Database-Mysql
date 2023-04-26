@@ -60,10 +60,10 @@ mysql>show databases;
 mysql>use study_db;   
 Database changed
 mysql>drop database study_db;
-Query OK <-- 뭐 이렇게 나오면 됩니 
+Query OK <-- 뭐 이렇게 나오면 됩니다  
 mysql>show databases;
 ```  
-여기서 세미콜론 과 's'를 주의하세요  
+여기서 세미콜론 과 's를 주의하세요  
 
 
 
