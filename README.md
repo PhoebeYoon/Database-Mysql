@@ -69,5 +69,5 @@ mysql> create table employee( id int(11), name varchar(16) not null,
 ```
 # pet table
 mysql> create table pet(name varchar(20), owner varchar(20),
-    -> species varchar(20), sex char(1), birth date );
+    -> species varchar(20), gender char(1), birth date );
 ```
