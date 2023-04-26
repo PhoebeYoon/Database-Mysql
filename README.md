@@ -61,7 +61,7 @@ mysql> desc student_info # 테이블의 구조를 알고 싶을때 desc 명령�
 |TEXT(n)|	문자열 데이터 타입(최대 65535byte) |
 |MEDIUMTEXT(n)	| 문자열 데이터 타입(최대 16777215byte) |
 |LONGTEXT(n)|	문자열 데이터 타입(최대 4294967295byte) |
-|JSON	JSON|문자열 데이터 타입 - JSON 형태의 포맷을 꼭 준수해야 한다.|
+|JSON	|문자열 데이터 타입 - JSON 형태의 포맷을 꼭 준수해야 한다.|
 
 |숫자형 데이터 타입 |  설명 |
 |---|---|
@@ -108,13 +108,13 @@ Query OK, 0 rows affected, 4 warnings (0.01 sec)
 mysql>desc tables;
 ```
 
-위의 2개의 예제에서 primary key 라는 것을 사용했습니다.   
+위의 예제에서 primary key 라는 것을 사용했습니다.   
 create문에서 테이블을 생성할때 primary key 제약조건을 설정할 수 있습니다. 
 PRIMARY KEY로 설정된 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 특징을 모두 가집니다.   
-, 이게 뭐냐면 해당 필드는 NULL 값을 가질 수 없으며, 또한 중복된 값을 가져서도 안 됩니다. 그리고 
-이러한 PRIMARY KEY 제약 조건을 기본 키라고 합니다
+이게 뭐냐면 해당 필드는 NULL 값을 가질 수 없으며, 또한 중복된 값을 가져서도 안된다는 의미입니다.  
+그리고 이것이 PRIMARY KEY 제약 조건입니다. PRIMARY KEY를 기본 키라고 부릅니다.
 
 ## primary key란
-primary key는 한개 또는 여러개의 칼럼으로 테이블내의 각 행들을 구별하는 목적으로 사용됩니다. 그래서 primary key로 설정된 필드는 null 값을 가질 수 없고 unique(유일)해야 합니다. 
+primary key는 한개 또는 여러개의 칼럼으로 테이블내의 <b>각 행들을 구별하는 목적으로 사용됩니다.</b> 그래서 primary key로 설정된 필드는 null 값을 가질 수 없고 unique(유일)해야 합니다. 
 
 
