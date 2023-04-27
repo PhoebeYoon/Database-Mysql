@@ -1,7 +1,7 @@
 ###### :cactus:  Mysql
 
 ## 스스로 테이블을 생성해 보세요
-1. test 라는 데이터베스를 생성하시오. 
+1. grade 라는 데이터베스를 생성하시오. 
 2. student, author 테이블을 생성하시오. 
  
 [ student 테이블]    
