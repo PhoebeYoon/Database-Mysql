@@ -68,6 +68,7 @@ ifnull(m,n) : m이 null 이라면 n을 출력합니다
 mysql> select if(10>12 , 'ten','twelve');
 mysql> select ifnull(null,'ok');
 mysql> select ifnull('','ok'); <-- 공백은 null 이 아닙니다 
+mysql> select ifnull('A','ok'); <-- 'A'가 출력
 ```    
 복잡한 조건을 사용해야 할때는, case문을 사용합니다.    
 형식은,   
@@ -78,6 +79,8 @@ case when 조건1  then 결과값1
          when 조건4  then 결과값4
          else 결과값5
 end
-```   
+```     
+여기까지 잘 따라오셨습니다.
+
 자세한 실습은 터미널에서가 아닌 workbench에서 해보겠습니다.  
-여기까지 잘 따라오셨습니다 
+ 
