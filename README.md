@@ -22,8 +22,9 @@
 6. Connet To Server에서, User name , Password 입력 후 ```Check``` 버튼을 클릭해서 'Status' 상태가 ```Connection succeeded```로 나오는지 확인합니다. 
 7. Installation Complete 부분에서  ◻️ Start MySql Workbench after setup (체크해제) 합니다.  
 8. 우리는 설치 후 shell를 이용해서 디비를 알아가도록 하겠습니다.  
-9. 나타나는 화면을 종료하기 위해 \help 를 해서 명령어를 확인해 본뒤 \exit 입력해서 창을 닫습니다.
-
+9. 나타나는 화면을 종료하기 위해 \help 를 해서 명령어를 확인해 본뒤 \exit 입력해서 창을 닫습니다.   
+[참고이미지]   
+<img width="900" alt="스크린샷 2023-04-27 오후 1 28 28" src="https://user-images.githubusercontent.com/48478079/234759574-9260b00c-5bf9-4a68-8834-ab442e00a7f6.png">
 
 [경로설정 ]
 ```
@@ -35,8 +36,8 @@ C:\Program Files\MySQL\MySQL Server 8.0\bin (설치경로 복사) ->
 ```
 cmd > mysql -uroot –p   (설명 –u 는 root  아이디로 로그인 , -p 는 패스워드 사용한다)
 ```    
-경로지정이 잘 되었다면 ' Enter passworld ' 가 나올것입니다. 
-
+경로지정이 잘 되었다면 ' Enter passworld ' 가 나올것입니다.    
+설치가 완료되었고 root 사용자를 이용해서 mysql에 접속까지 시도해 보았습니다.
 
 
 10. 참고로  아래와 같이 커맨드창에서 mysql를 접속할 수 있습니다.  
@@ -47,7 +48,7 @@ cmd > mysql -uroot –p   (설명 –u 는 root  아이디로 로그인 , -p 는
 ```
 
 
-설치가 완료되었고 root 사용자를 이용해서 mysql에 접속까지 시도해 보았습니다.
+
 
 
 
@@ -84,4 +85,5 @@ https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  
 <img width="526" alt="스크린샷 2023-03-30 오후 8 21 43" src="https://user-images.githubusercontent.com/48478079/228820753-d1833e32-b546-4c9b-87a9-5daa98c4d18a.png">
 
 그리고 더블클릭하여 실행합니다.   
+
 
