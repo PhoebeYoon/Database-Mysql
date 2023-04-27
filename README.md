@@ -172,15 +172,19 @@ PRIMARY KEY로 설정된 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 �
 ## primary key란
 primary key는 한개 또는 여러개의 칼럼으로 테이블내의 <b>각 행들을 구별하는 목적으로 사용됩니다.</b> 그래서 primary key로 설정된 필드는 null 값을 가질 수 없고 unique(유일)해야 합니다. 
 
-#### 기존 primary key삭제 후 다른 컬럼으로 지정
+#### 기존 primary key삭제 후 다른 컬럼으로 지정, primary key 여러개 지정
 ```   
 mysql>desc test;
 mysql>alter tabel test drop primary key;
 mysql>desc test;
 mysql>alter table test add primary key(room_num);
 mysql>desc test;
-```
+```   
 
-
-
+```   
+mysql>alter table test drop primary key;
+mysql>alter table test add primary key(id, room_num);
+mysql>desc test;
+```  
+primary key가 2개 지정된  것을 확인합니다.   
 
