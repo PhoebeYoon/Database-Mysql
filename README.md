@@ -4,9 +4,11 @@
 
 
 ## cvs 파일파일 불러오기
-1. 왼쪽 패널의 비어있는 곳을 클릭하고 우클릭합니다. 새로운 스키마(디비)를 만드는 것입니다. 디비의 이름은 'supermarket'라고 합니다. 
+1. 왼쪽 'Schema'패널을 선택하고 비어있는 곳에 우클릭합니다. 새로운 스키마(디비)를 만드는 것입니다. 디비의 이름은 'supermarket'라고 합니다. 
 
 <img width="150" alt="스크린샷 2023-04-03 오후 7 21 13" src="https://user-images.githubusercontent.com/48478079/229482999-2e57d891-245a-46eb-89c6-b9aa508c048f.png">    
+'Apply' 버튼을 클릭해야 진짜 실행됩니다.  
+
 2. supermarket 이름에서 우클릭하여 'Table Data Import Wizard' 선택합니다    
 <img width="250" alt="스크린샷 2023-04-03 오후 6 16 37" src="https://user-images.githubusercontent.com/48478079/229484455-bfe605c8-94a3-4dd6-ba37-210670870b1d.png">   
 3. 다음으로 진행하면 Configure Import Settings 이 나옵니다. csv 파일이 정상적이라면 알아야 아래처럼 나옵니다    
