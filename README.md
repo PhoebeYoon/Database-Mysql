@@ -68,6 +68,14 @@ grant all privileges on testdb.* to 'general1'@'localhost';
 <img width="550" alt="스크린샷 2023-04-05 오후 7 22 52" src="https://user-images.githubusercontent.com/48478079/230053806-15b761a5-5723-41d7-8cb1-eaa725392764.png">
 
 
+### 데이터를 삽입해 보세요 ( 쿼리탭에서 실행)
+```
+INSERT INTO 테이블이름(필드명, 필드명, 필드명...) VALUES(숫자데이터, '문자데이터', 숫자데이터);
+-- 여러개 입력하고   
+select * from 테이블명; 
+```
+
+
 #### 권한 조회하기
 ```
 show grants for 'general1'@'localhost';
