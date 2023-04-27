@@ -2,11 +2,14 @@
 
 
 ## 실습을 위한 준비로 mysql를 설치하겠습니다 
-1. mySql 다운로드 https://dev.mysql.com/downloads/mysql/
-2. 윈도우 버전 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. 특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.    
-3. 다음이미지를 참조하시면 됩니다 
-<img width="1406" alt="스크린샷 2023-03-30 오후 8 44 21" src="https://user-images.githubusercontent.com/48478079/228825962-ea5061f5-73fb-4afe-ab63-4cf9632d51d2.png">   
-mysql은 3306 포트번호를 사용합니다. (포트에 대한 사전지식이 필요합니다) ( 이미지를 클릭하면 좀더 크게 볼 수 있습니다 )   
+1. 실습을 위해 제어판 - 프로그램 추가/삭제에서 mysql이 들어가 있는 항목을 선택하고 삭제합니다  
+2. 구글에서 'mysql download for windows' 로 검색하거나 mySql 다운로드 https://dev.mysql.com/downloads/mysql/ 접속합니다
+3. 윈도우 또는 맥 선택 - 본인 컴퓨터에 맞는 운영체제와 버전를 선택하고 다운로드 후 나오는 화면을 읽고 진행하시면 됩니다. (윈도우와 맥의 화면이 다릅니다)
+- 윈도우는 접속하면 아래쪽에 있는 'MySQL Community(GPL) Downloads'를 선택하고
+- 맥은 자신의 프로세스가 M1 버전 종류인지를 아닌지를 구별해서 선택합니다 ( 참고 Intel 프로세서 아키텍처는 x86_64이고 Apple Silicon M1은 arm64 )
+
+특별히 어려운 부분이 없고 Install complete 부분으로 넘어갔을때  Start MySQL Workbench after Setup 부분이 체크되어 있는지 확인하시면 됩니다.    
+
 
 [경로설정 ]
 ```
