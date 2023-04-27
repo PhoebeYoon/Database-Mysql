@@ -1,5 +1,43 @@
 ###### :cactus:  Mysql
 
+
+## SQL이란? (Structured Query Language)
+
+#### SQL(Structured Query Language)로 데이터베이스에서 데이터를 정의, 조작, 제어하기 위해 사용되는 언어입니다.   
+즉 <b>구조화된 질문을 하는 언어</b>라는 뜻입니다 무슨 말이냐하면 데이터베이스에서 원하는 정보를 꺼내올때 그냥 아무렇게나 물어보면 안된다는 것입니다. 사람의 뇌는 글자가 조금 틀려도 문장의 앞뒤가 바뀌어도 이해하지만 이것은그렇지 않다는 것입니다. 주어진 형식대로 질문을 해야 이해하고 답변을 한다는 것입니다. 
+
+SQL은 데이터를 쿼리, 조작 및 정의하고 액세스 제어를 제공하기 위해 거의 모든 관계형 데이터베이스에서 사용되는 프로그래밍 언어입니다. SQL은 1970년대에 IBM에서 처음 개발었으며 Oracle의 적극적인 공헌으로 SQL ANSI 표준이 수립되기에 이르렀습니다.
+
+#### SQL 기본은 CRUD ( Create Read Update Delete )
+SQL도 관계형 데이터베이스에서 CRUD를 하기 위해 존재합니다. CRUD - Create, Read, Update, Delete의 앞글자를 합친것입니다. DB 권한설정, 테이블 CRUD, 데이터 CRUD는 SQL을 통해 이루어진다고 할 수 있습니다. 
+
+1. DCL (Data Control Language):
+데이터베이스에 접근할 수 있는 사용자들의 권한을 관리하는 명령어입니다. (grant, revoke) 비유하자면 학년 정보(데이터베이스)에는 담임 선생님만 접근할 수 있게...
+
+2. DDL (Data Definition Language):
+테이블 CRUD를 위한 명령어입니다. (create, alter, drop, rename ..) 비유하자면 출석부엔 어떤 컬럼을 넣을 것인가.. (학번, 이름, 출석여부 등..)
+
+3. DML (Data Manipulation Language):
+실제 테이블에 있는 데이터를 CRUD하기 위한   명령어입니다. (select, insert, update, delete...) 비유하자면 실제 출석부에 데이터를 넣는 것.   
+
+
+
+### 생성 (insert) 쿼리 예시
+INSERT INTO 테이블이름(컬럼이름1, 컬럼이름2, 컬럼이름3, ...) VALUES (데이터값1, 데이터값2, 데이터값3, ...)
+### 수정 (update) 쿼리 예시
+UPDATE 테이블이름 SET 컬럼이름1=데이터값1, 컬럼이름2=데이터값2, ... WHERE 필드이름=데이터값
+### 삭제 (delete) 쿼리 예시
+DELETE FROM 테이블이름 WHERE 필드이름=데이터값  
+### 조회 (select) 쿼리 예시
+select 컬럼 from 테이블 where 조건
+- select
+- join
+- sub query
+- group query
+- condition
+
+
+
 ## 데이터베이스 vs 스키마 
 우리가 사용할 데이터를 기록하는 최종적인 곳은 테이블(table) 입니다 액셀처럼 스프레드시트 형태로 생각하시면 됩니다.   
 각각의 정보가 흩어져 있다면 특별한 의미를 부여할 수 없습니다. 데이터들이 한군데 모여있을때 특별한 의미를 갖게 됩니다   
@@ -68,45 +106,12 @@ mysql>show databases;
 
 
 
-## SQL이란? (Structured Query Language)
-RDBMS의 데이터를 관리하기 위해 만들어진 언어입니다.  DB 권한설정, 테이블 CRUD, 데이터 CRUD는 SQL을 통해 이루어진다고 할 수 있습니다. 
-
-1. DCL (Data Control Language):
-데이터베이스에 접근할 수 있는 사용자들의 권한을 관리하는 명령어입니다. (grant, revoke) 비유하자면 학년 정보(데이터베이스)에는 담임 선생님만 접근할 수 있게...
-
-2. DDL (Data Definition Language):
-테이블 CRUD를 위한 명령어입니다. (create, alter, drop, rename ..) 비유하자면 출석부엔 어떤 컬럼을 넣을 것인가.. (학번, 이름, 출석여부 등..)
-
-3. DML (Data Manipulation Language):
-실제 테이블에 있는 데이터를 CRUD하기 위한   명령어입니다. (select, insert, update, delete...) 비유하자면 실제 출석부에 데이터를 넣는 것.   
-
-
-## SQL 기본은 CRUD ( Create Read Update Delete )
-
-SQL도 관계형 데이터베이스에서 CRUD를 하기 위해 존재합니다.  
-
-### 생성 (insert)
-INSERT INTO 테이블이름(컬럼이름1, 컬럼이름2, 컬럼이름3, ...) VALUES (데이터값1, 데이터값2, 데이터값3, ...)
-### 수정 (update)
-UPDATE 테이블이름 SET 컬럼이름1=데이터값1, 컬럼이름2=데이터값2, ... WHERE 필드이름=데이터값
-### 삭제 (delete)
-DELETE FROM 테이블이름 WHERE 필드이름=데이터값  
-
-### 조회 (select)
-select 컬럼 from 테이블 where 조건
-- select
-- join
-- sub query
-- group query
-- condition
-
-
 
 ## DB 외부접속 
 <img width="450" alt="스크린샷 2023-03-30 오후 6 48 27" src="https://user-images.githubusercontent.com/48478079/228798278-82a1cd37-188c-46c7-86aa-b18e84f40e2d.png"> 
       
       
-아래 내용은 mysql를 사용해서 db에 접속하는 코드입니다. 일반적인 코드이며 개별 디비의 상황에따라 내용은 달라질 수 있습니다.  디비에 접속해서 데이터를 조회하려면 사용자에 대한 정보와 데이터베이스에 대한 정보를 넣고 쿼리문이라는 것을 이용해서 원하는 정보를 가져올 수 있습니다.    
+아래 내용은 mysql를 사용해서 db에 접속하는 코드 예시입니다. 일반적인 코드이며 개별 디비의 상황에따라 내용은 달라질 수 있습니다.  디비에 접속해서 데이터를 조회하려면 사용자에 대한 정보와 데이터베이스에 대한 정보를 넣고 쿼리문이라는 것을 이용해서 원하는 정보를 가져올 수 있습니다.    
 ```
 var mysql = require('mysql');
 var connection = mysql.createConnection({
