@@ -175,7 +175,7 @@ primary key는 한개 또는 여러개의 칼럼으로 테이블내의 <b>각 �
 #### 기존 primary key삭제 후 다른 컬럼으로 지정, primary key 여러개 지정
 ```   
 mysql>desc test;
-mysql>alter tabel test drop primary key;
+mysql>alter table test drop primary key;
 mysql>desc test;
 mysql>alter table test add primary key(room_num);
 mysql>desc test;
