@@ -19,23 +19,40 @@
 
 
 5. 그리고 설치되는 경로를 확인하도록 합니다.   Password를 요구하면 간단한 비번을 입력합니다.( 잊지 않도록 유의하세요 ) 나머지는 기본값으로 설정합니다. 
-6. Connet To Server 
-5. 그리고 설치되는 경로를 확인하도록 합니다.   Password를 요구하면 간단한 비번을 입력합니다.( 잊지 않도록 유의하세요 ) 나머지는 기본값으로 설정합니다. 
-우리는 설치 후 shell를 이용해서 디비를 알아가도록 하겠습니다.  
+6. Connet To Server에서, User name , Password 입력 후 ```Check``` 버튼을 클릭해서 'Status' 상태가 ```Connection succeeded```로 나오는지 확인합니다. 
+7. Installation Complete 부분에서  ◻️ Start MySql Workbench after setup (체크해제) 합니다.  
+8. 우리는 설치 후 shell를 이용해서 디비를 알아가도록 하겠습니다.  
+9. 나타나는 화면을 종료하기 위해 \help 를 해서 명령어를 확인해 본뒤 \exit 입력해서 창을 닫습니다.
 
 
 [경로설정 ]
 ```
 C:\Program Files\MySQL\MySQL Server 8.0\bin (설치경로 복사) ->
-   내 pc – 우클릭 – '정보탭' 아래 '고급시스템 정보' > 환경변수 > 
-   시스템변수 : path 찾아서 우측에서 새로만들기 클릭하고 붙여넣기한 후 확인
+   내 pc – 우클릭 – '정보탭' 아래 '고급시스템 정보' (사용 pc에 따라 다를 수 있습니다) > 환경변수 > 
+   시스템변수(s)항목에서 목록에서 'path' 찾고 '편집' > 새로만들기 클릭 > ctrl +v > '확인'버튼
 ```
 [설치확인]    
 ```
-cmd > mysql mysql-uroot –p   (설명 –u 는 root  아이디로 로그인 , -p 는 패스워드 사용한다)
+cmd > mysql -uroot –p   (설명 –u 는 root  아이디로 로그인 , -p 는 패스워드 사용한다)
 ```    
+경로지정이 잘 되었다면 ' Enter passworld ' 가 나올것입니다. 
 
-4. macOS -
+
+
+10. 참고로  아래와 같이 커맨드창에서 mysql를 접속할 수 있습니다.  
+```
+>mysql -uroot -p -hlocalhost
+>mysql -uroot -p -h127.0.0.1
+>mysql -uroot -p 엔터
+```
+
+
+설치가 완료되었고 root 사용자를 이용해서 mysql에 접속까지 시도해 보았습니다.
+
+
+
+#### 📝 아래 내용은 mac 사용자를 위하 내용입니다.  
+
 ```
 > brew -v 
 Homebrew 4.0.0  ( 이렇게 버전이 나오는지 확인 )
@@ -54,19 +71,7 @@ cd usr/local/mysql/bin
 Welcome to the MySQL monitor.  Commands end with ; or \g. <-- 요런 메시지가 나옵니다 
 mysql> 
 ```   
-참고로  아래와 같이 커맨드창에서 mysql를 접속할 수 있습니다.  
-```
->mysql -uroot -p -hlocalhost
->mysql -uroot -p -h127.0.0.1
->mysql -uroot -p 엔터
-```
-
-
-자 그럼 설치는 완료했지만 커맨드라인으로 명령을 입력해서 사용하기 어렵잖아요.    
-
-#### 📝 mySql 설치로는 여기까지만 하면 됩니다 아래 내용은 workbench를 설치할때 하시면 됩니다 
-
-4. 그래서 윈도우에서처럼 Workbench를 설치하도록 하겠습니다.  
+ Workbench를 설치하도록 하겠습니다.  
 (참고로 저는 최신버전 8.0.30 입니다. 8.0.31버전도 있지만 이 버전은 workbench 실행이 원할하지 않습니다 )
 https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  다운로드후 설치하려고 하는데 '허용되지 않는다 뭐 그러면서 중단되면   
 :apple:  -> 시스템설정 -> 개인정보 보호 및 보안 -> 아래이미지처럼 허용해 줍니다    
@@ -78,5 +83,5 @@ https://dev.mysql.com/downloads/workbench/ 이동해서 다운로드합니다.  
 
 <img width="526" alt="스크린샷 2023-03-30 오후 8 21 43" src="https://user-images.githubusercontent.com/48478079/228820753-d1833e32-b546-4c9b-87a9-5daa98c4d18a.png">
 
-5. 그리고 더블클릭하여 실행합니다.   
+그리고 더블클릭하여 실행합니다.   
 
