@@ -85,11 +85,12 @@ mysql> select character_length('한글');
 mysql> select length('한글');
 ```
 
+<img width="240" alt="스크린샷 2023-04-04 오전 10 26 24" src="https://user-images.githubusercontent.com/48478079/229662474-ac4fa2da-c9e9-4e5f-908f-23bd17d13822.png"> <img width="170" alt="스크린샷 2023-04-04 오전 10 26 28" src="https://user-images.githubusercontent.com/48478079/229662480-67912d34-7a7e-4118-931d-3ad1af6f86ea.png"> 
+
+
 upper('a','c') 이런식은 에러입니다. 단일 문자열이어야 합니다.  
 char_length()은 스트링, 문자의 길이를 리턴하고 
 length()는 bytes를 계산합니다 그래서 영문의 경우는 모두 동일하지만 한글의 경우에는 달라집니다.   char_length는 character_length와 동의어입니다.  
-
-<img width="220" alt="스크린샷 2023-04-04 오전 10 26 24" src="https://user-images.githubusercontent.com/48478079/229662474-ac4fa2da-c9e9-4e5f-908f-23bd17d13822.png"> <img width="170" alt="스크린샷 2023-04-04 오전 10 26 28" src="https://user-images.githubusercontent.com/48478079/229662480-67912d34-7a7e-4118-931d-3ad1af6f86ea.png">   
 
 ```
 mysql> select trim(' hello ');   <-- 글자 양쪽에 공백 있습니다. 양쪽 공백을 제거합니다 
