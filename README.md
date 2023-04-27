@@ -57,17 +57,46 @@ mysql> desc books;
 
 ``` 
 
-🧑‍🚀  위의 employee 생성은 아래입니다 
+🧑‍🚀 employee, author, student 테이블 생성은 아래와 같습니다 ( 보지말고 직접해보세요 ) 
 ```
-mysql> create table employee( id int(11), name varchar(16) not null,
-    -> department_id varchar(16) not null,
+mysql> create table employee( 
+    -> id int(11), 
+    -> name varchar(16) not null,
+    -> department_id varchar(16),
     -> primary key(id)
     -> );
+```
+
+```
+mysql> create table author(
+    -> code char(5) not null,
+    -> title varchar(50) not null,
+    -> writer varchar(20),
+    -> price int not null,
+    -> primary key(code)
+    -> );
+```
+
+```
+create table student(
+    -> student_id int not null auto_increment,
+    -> student_name varchar(30) not null,
+    -> kor int null,
+    -> eng int null,
+    -> mat int null,
+    -> primary key(student_id)
+    -> );
+
 ```
 
 🧑‍🚀 pet 테이블생성 쿼리는 아래와 같고, primary key는 생성하지 않습니다
 ```
 # pet table
-mysql> create table pet(name varchar(20), owner varchar(20),
-    -> species varchar(20), gender char(1), birth date );
+mysql> create table pet(
+    -> name varchar(20), 
+    -> owner varchar(20),
+    -> species varchar(20), 
+    -> sex char(1), 
+    -> birth date 
+    ->);
 ```
