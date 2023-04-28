@@ -1,6 +1,6 @@
 ###### :cactus:  Mysql
 
-:pencil: 첨부된 파일을 다운로드 받아 import 하세요
+:pencil: 첨부된 market_db을 다운로드 받아 import 하세요
 
 
 
