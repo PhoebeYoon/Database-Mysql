@@ -1,5 +1,9 @@
 ###### :cactus:  Mysql
 
+:pencil: 첨부된 파일을 다운로드 받아 import 하세요
+
+
+
 ## where(조건) 사용하기
 
 
