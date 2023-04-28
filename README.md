@@ -27,11 +27,11 @@ drop table persons;  <-- drop table Persons 라고 입력해도 지워집니다.
 > 명령문앞에 '-- ' 붙이면 주석처리되어 실행되지 않습니다.   
  
 #### 실행후 결과가 안 보인다고 생각하시면 왼쪽패널의 리플레시 아이콘을 클릭합니다 
-### 이제 기존 테이블을 이용해서 새로운 테이블을 만들어보겠습니다. 
+### 이제 기존 테이블을 이용해서 새로운 테이블을 만들어보겠습니다.   
+우리는 이미 만들었던 persons라는 테이블을 삭제한 상태입니다. 주석처리와 블록을 적당하게 사용해서 다시 persons 테이블을 만드시고 아래의 명령을 실행하세요   
 ```  
 create table student as
-select firstname, city
-from person;
+select firstname, city from persons;
 desc student;
 ```
 
