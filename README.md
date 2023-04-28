@@ -5,15 +5,19 @@ workbench실행 후 원하는 스키마를 선택할때 use 명령대신 해당 
 
 ### select 문
 ```
+# 우리는 testdb에 있습니다
 모든 내용을 보고 싶을 때  
 select * from wellknowpeople;
-테이블이름이 좀 길죠 그래서 'as' 별칭으로 해도 됩니다 
+테이블이름이 좀 길죠 그래서 'as' 키워드를 이용하여 별칭을 지정할 수도 있습니다 
 select * from wellknowpeople  as wp;
 
-select * from actor;
-select first_name, last_name from actor;
+select * from actor; 
+-- 이렇게 하면 현재 우리는 testdb에 있고 testdb에는 actor라는 테이블이 없습니다.
+select * from sakila.actor;  <-- 이런식으로 테이블앞에 디비의이름을 적어주고 '.'으로 연결해야 합니다.
+
+select first_name, last_name from actor; <-- 수정해서 실행해 보세요
 ```
-> 별칭을 사용할때는 as를 사용한다고 외웁시다
+> 별칭을 사용할때는 as를 사용한다고 외웁시다. 디비와테이블사이에 '.'를 찍어줍니다.  별표는 모든 것을 의미합니다
 
 ### 컬럼 추가
 ```
@@ -38,26 +42,31 @@ ex) alter table [테이블명] add [컬럼명] varchar(100) not null default '0'
 
 
 #### 아래의 내용을 따라해 보세요
-``` 
-alter table actor add column age int(5) not null default 0 after last_name;
+```  
+use sakila;
+select * from actor;
+alter table actor add column age int not null default 0 after last_name;
 desc actor;
 ```    
 actor 테이블에 age라는 칼럼을 생성하되 int(5)의 크기로 하고 디폴트값은 0으로 주고, 순서는 last_name전에 생성한다는 뜻이다.  
 <img width="337" alt="스크린샷 2023-04-04 오후 3 22 54" src="https://user-images.githubusercontent.com/48478079/229705426-bb8fee1b-2819-4493-9a58-87125f387be2.png">
 
 ```
-alter table actor change age nai int(5);
+alter table actor change age nai int;
 desc actor;
+
 alter table actor modify nai varchar(10);
 desc actor;
+
+alter table actor drop column nai;  <-- column를 적어주면 뜻이 명확해지므로 
+desc actor;
+
 alter table actor rename kactor;
 desc kactor;
 
 create table actor as
 select *
 from kactor;
-
-drop table kactor;
 ``` 
 
 이미 만들어진 테이블에서 데이터를 가져다가 새로운 테이블을 생성했습니다.  
