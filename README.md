@@ -63,7 +63,7 @@ from sakila.actor;
 
 
 이때 중요한 것은 임폴트하려는 스키마를 먼저 생성해놓고 import 시킵니다. 그렇지 않으면 
-'ERROR 1049 (42000): Unknown database' 가 발생합니다.  경로지정후에 화면아래쪽에 'Start Import' 라는 버튼이 보일 것입니다.    
+'ERROR 1049 (42000): Unknown database' 가 발생합니다.     
 
 여기까지 잘 실습이 되었다면 아래의 명령을 실습해보겠습니다. 
 
