@@ -49,8 +49,22 @@ alter table member_girl add constraint primary key(mem_id)
 delete문 사용시 에러가 발생하면 edit > preferences > sql editor 선택 > 오른쪽맨하단에 Safe Updates ~~ 체크해제 합니다
 
 
-### delete문 vs truncate 문으로 삭제하기
-
-
-
 ### select 문 + limit 문
+limit n : n개 만큼 출력합니다   
+limint m,n : m행부터 n개 출력합니다    
+
+```
+limit n; :  n으로 지정된 숫자만큼 행이 출력된다.
+use market_db;
+select * from member;
+-- limit n; :  n으로 지정된 숫자만큼 행이 출력된다.
+select * from member limit 1;
+select * from member limit 3;
+
+-- limit m, n (m행부터 n개 출력, m을 offset이라고 한느데 기본값은 0 입니다 )
+select * from member limit 3, 3;
+
+```
+
+
+
