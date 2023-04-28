@@ -66,6 +66,7 @@ SELECT mem_id , price FROM market_db.buy where price >80;
 ```
 
 #### exists 와 not exists 실습을 위해 간단한 테이블을 2개 만들겠습니다. 
+아래의 내용을 보면 알겠지만 터미널에서 실행합니다.(market_db 디비를 사용합니다)   
 ```
 mysql> create table sales(id int, order_date date, amount int);
 mysql> insert into sales(id, order_date, amount)
