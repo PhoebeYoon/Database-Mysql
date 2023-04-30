@@ -86,6 +86,20 @@ mysql> show variables where Variable_Name like "%dir%";
 
 <img width="400" alt="스크린샷 2023-04-01 오후 3 40 50" src="https://user-images.githubusercontent.com/48478079/229270185-18108f58-1641-4356-bb00-b3c92c4f5296.png">
 
+위의 내용에서 현재 사용자, TCP port 번호, 문자셋과 'Delimiter'이 있습니다.
+
+문자셋에 uft8mb4로  되어 있는 것은 이미 설명했습니다.  
+여기서 delimiter라는 것은 명령어의 끝을 의미할때 사용하는 기호를 말하는 것으로 현재는 세미콜론으로 지정되어 있습니다. 이것을 바꿔보도록 하겠습니다.  
+```
+mysql를 실행합니다.  
+mysql>show databases;
+mysql>delimeter !
+mysql>show databases;
+->   이렇게 나오면 !를 입력해서 문장을 끝냅니다.
+원래대로 바꿔줍니다  
+```   
+*기존에 사용했던 명령어를 다시 사용하려면 키보드의  :arrow_up: , :arrow_down: 키를 사용합니다 
+
 
 ## 데이터베이스 생성 및 삭제 
 ``` create database 데이터베이스이름  ```    
