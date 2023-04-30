@@ -48,14 +48,15 @@ CREATE TABLE EMPLOYEE (
 ```    
 
 터미널에서 무조건 하나를 만들어 보겠습니다.   
-```
+```   
+mysql> create database webdb;
 mysql> use webdb;
 Database changed 
 mysql> create table stdent_info(
     -> code char(5) not null,
     -> title varchar(50) not null,
     -> writer varchar(20),
-    -> price int(8) not null,
+    -> price int not null,
     -> primary key(code)
     -> );
 ```
@@ -73,7 +74,7 @@ mysql> desc stdent_info # 테이블의 구조를 알고 싶을때 desc 명령을
 ```   
 mysql>alter table stdent_info rename student_info;
 mysql>show tables;
-# 이제 name , tel, address 칼럼을 가진 형식은 모두 char(50)인 테이블을 3개를 만들어봅니다. 테이블이름은 임의로 지정합니다
+# 이제 name , tel, address 칼럼을 가진 형식은 모두 varchar(20), varchar(11), varchar(50)인 테이블을 3개를 만들어봅니다. 테이블이름은 임의로 지정합니다
 # 이제 여러개의 테이블의 이름을 한꺼번에 변경해보겠습니다
 mysql>rename table 기존테이블이름 to newtable1, 기존테이블이름 to newtable2, 기존테이블이름 to newtable3;
 mysql>show tables;
@@ -156,7 +157,9 @@ mysql> desc test;
 mysql> desc sample;
 ```
 
-위의 예제에서 primary key 라는 것을 사용했습니다.   
+위의 예제에서 primary key 라는 것을 사용했습니다. 그리고 primary key가 약간 다른 방식으로 지정된 것을 구분하세요. 
+
+
 create문에서 테이블을 생성할때 primary key 제약조건을 설정할 수 있습니다. 
 PRIMARY KEY로 설정된 해당 필드는 NOT NULL과 UNIQUE 제약 조건의 특징을 모두 가져야합니다.    
 이게 뭐냐면 해당 필드는 다른 레코드와의 구별을 하기 위해 사용되기 때문에 NULL 값을 가질 수 없고, 또 중복된 값을 가져서도 안된다는 의미입니다.  
