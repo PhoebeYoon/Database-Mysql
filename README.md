@@ -63,10 +63,8 @@ mysql를 사용하려면 유저 (관리자)가 있어야 하는데 기본적인 
 
 
 
-## 한글설정 및 환경설정 내용보기   
-먼저 mysql의 설정파일은 다음과 같습니다 ( 설치하는 내용은 다음 레슨에 있습니다 )  
-- Mac에서는 my.cnf <-- mysql에서 사용하는 환경설정파일입니다 
-- windows는 my.ini 파일입니다  
+## 환경설정 내용보기   
+
 
 이제 mysql의 설정내용을 터미널을 통해 알아보겠습니다.  여기서 우리가 봐야할 것은 
 ```
@@ -130,7 +128,5 @@ connection.query(' SELECT * FROM sampledb', function(err, results, fields){
       console.log(results);
 })
 connection.end();
------------------------------------
-터미널에서 >npm install mysql 엔터
-터미널에서 >node mysql 엔터 (터미널에 테이블의 내용이 출력되는지 확인)
+
 ```
