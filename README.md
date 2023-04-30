@@ -73,5 +73,5 @@ mysql> select authentication_string from user;  <-- 현재 mysql 데이터베이
 여기에 사용된 명령어들 몇개되지 않으니 기억하시겠죠! 
 
 ## 해쉬코드는 함호화 해시 함수를 이용합니다.
-아래는 sha256으로 클릭해서 간단한 내용을 입력해보세요.  
+아래는 해쉬함수를 뭔지를 체험할 수 있는 사이트입니다. 그냥 재미삼아 해보세요   
 https://sha256algorithm.com/
