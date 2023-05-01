@@ -19,7 +19,7 @@ drop table member_girl;
 
 
 -- 기본키없이 테이블 생성
-CREATE TABLE member_girl (
+CREATE TABLE member (
     mem_id CHAR(8) NOT NULL,
     mem_name VARCHAR(10) NOT NULL,
     height TINYINT UNSIGNED NULL
