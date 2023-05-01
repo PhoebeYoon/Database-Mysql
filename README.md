@@ -22,7 +22,7 @@ userID CHAR(8) NOT NULL, -- 아이디(FK)
 prodName CHAR(6) NOT NULL, -- 물품 
 groupName CHAR(4), -- 분류
 price INT NOT NULL, -- 단가
-amount SMALLINT NOT NULL, -- 수량
+amount SMALLINT NOT NULL, -- 수량, smallint 자료형은 2bytes
 FOREIGN KEY (userID) REFERENCES userTBL (userID) );
 
 INSERT INTO userTBL VALUES ("YJS", "유재석", 1972, "서울", "010", "11111111", 178, "2008-8-8"); 
