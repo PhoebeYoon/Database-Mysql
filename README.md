@@ -104,7 +104,9 @@ select  price, amount  from market_db.buy
 
 
 ### order by (오름차순, 내림차순)으로 보기
-order by에서 정렬기준을 1개 이상 사용할때는 순서를 고려해야 합니다. 맨왼쪽에 기준대로 정렬하고 그 정렬된 값들을 가지고 2번째 기준대로 정렬하는 것입니다.   내림차순에는 'desc'를 오름차순에는 'asc'를 사용하는데 'asc'는 생략가능합니다.   
+
+order by에서 정렬기준을 1개 이상 사용할때는 순서를 고려해야 합니다. 맨왼쪽에 기준대로 정렬하고 그 정렬된 값들을 가지고 2번째 기준대로 정렬하는 것입니다.  
+내림차순에는 'desc'를 오름차순에는 'asc'를 사용하는데 'asc'는 생략가능합니다.   
 
 
 order by colm1 desc, colm2 ;  
@@ -147,7 +149,8 @@ select last_name ,first_name from testdb.actor  order by last_name desc, first_n
 -- last_name으로 그룹화하고 first_name으로 다시 그룹화하고 싶다면 아래 구문처럼 적으면 에러가 납니다. 
 -- 다다음줄처럼 기술해야 합니다. 
 -- select last_name ,first_name from testdb.actor  group by last_name order by first_name; 
-select last_name ,first_name from testdb.actor  group by last_name, first_name order by last_name, first_name;
+select last_name ,first_name from testdb.actor  group by last_name, first_name 
+    order by last_name, first_name;
 
 ```
 
