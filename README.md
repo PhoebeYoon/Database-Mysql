@@ -106,6 +106,7 @@ select  price, amount  from market_db.buy
 ### order by (오름차순, 내림차순)으로 보기
 order by에서 정렬기준을 1개 이상 사용할때는 순서를 고려해야 합니다. 맨왼쪽에 기준대로 정렬하고 그 정렬된 값들을 가지고 2번째 기준대로 정렬하는 것입니다.   내림차순에는 'desc'를 오름차순에는 'asc'를 사용하는데 'asc'는 생략가능합니다.   
 
+
 order by colm1 desc, colm2 ;  
 
 이렇게 기술되어 있다면 먼저 colm1를 내림차순으로 정렬하고 colm1에 같은 값이 있다면 그값을 다시 오름차순으로 정렬하는 것입니다. 
@@ -151,7 +152,8 @@ select last_name ,first_name from testdb.actor  group by last_name, first_name o
 ```
 
 #### is null , ifnull 
-기존에 만든 디비 'wellknowpeople'를 사용해 보겠습니다.  기존의 내용중에 일부러 null 값을 주도록할건데, 내용을 조회해보니 'Read Only'로 나옵니다.  해당 디비의 구조로 들어가서 primary key (pk)를 설정,
+기존에 만든 디비 'wellknowpeople'를 사용해 보겠습니다.  기존의 내용중에 일부러 null 값을 주도록할건데,
+내용을 조회해보니 'Read Only'로 나옵니다.  해당 디비의 구조로 들어가서 primary key (pk)를 설정,
 반드시 'Apply'클릭해서 디비에 반영해야 합니다.   
 
 ifnull 은 지정된 칼럼의 값이 null 이면 지정된 값으로 보이도록 합니다. 
